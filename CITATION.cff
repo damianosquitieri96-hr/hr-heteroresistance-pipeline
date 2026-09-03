@@ -5,7 +5,7 @@ abstract: "Analysis code, command lines, tool versions and thresholds for a two-
 version: 1.0.0
 license: MIT
 type: software
-authors: {DamianoSquitieri}
+authors: DamianoSquitieri
   - family-names: "<surname>"
     given-names: "<given name>"
 repository-code: "https://github.com/damianosquitieri96-hr/hr-heteroresistance-pipeline"
