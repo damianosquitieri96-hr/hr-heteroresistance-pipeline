@@ -1,5 +1,7 @@
 # Beta-lactam heteroresistance in bloodstream infections — analysis pipeline
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22288189.svg)](https://doi.org/10.5281/zenodo.22288189)
+
 Analysis code, exact command lines, tool versions and thresholds for the two-centre
 study of beta-lactam heteroresistance in clonal resistant/susceptible (R/S) isolate
 pairs from bloodstream infection episodes (33 pairs, two centres).
@@ -33,8 +35,10 @@ variant calling. No inter-patient comparison is made anywhere in the pipeline.
 
 ## Data availability
 
-Raw reads and assemblies are **not** in this repository. They are deposited separately
-in ENA/SRA; the BioProject accession will be added here on release (`<accession>`).
+Raw reads and assemblies are **not** in this repository, and are **not yet deposited**:
+they will be submitted to ENA prior to publication, and the BioProject accession will be
+added to this section and to `docs/methods.md` at that point. Until then no accession
+should be cited for this study.
 `data/` contains only derived tables (CC-BY-4.0); code is MIT.
 
 ## Coverage of the cohort
@@ -46,4 +50,4 @@ Per-pair status: `data/pairs_vcf_availability.csv`.
 
 ## Citation
 
-See `CITATION.cff`. Release v1.0.0 is archived at Zenodo (DOI `<DOI>`).
+See `CITATION.cff`. Release v1.0.1 is archived at Zenodo: DOI [10.5281/zenodo.22288189](https://doi.org/10.5281/zenodo.22288189).
