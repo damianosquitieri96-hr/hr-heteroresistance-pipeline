@@ -182,7 +182,7 @@ All analysis code, together with the exact command lines, tool versions and thre
 used at every stage — hybrid assembly, annotation, long-read mapping and gene-dosage
 estimation, joint two-sample variant calling, intra-pair chromosomal distance, k-mer
 sketch clonality analysis, predicted variant effect and PAP correlation — is available at
-`https://github.com/<user>/hr-heteroresistance-pipeline` (release v1.0.0, archived at
+`https://github.com/damianosquitieri96-hr/hr-heteroresistance-pipeline` (release v1.0.0, archived at
 Zenodo, DOI `<DOI>`). Derived tables underlying every figure and table are included in
 the same repository. Sequencing reads and assemblies are deposited in ENA under
 BioProject `<accession>`.

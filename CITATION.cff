@@ -8,6 +8,6 @@ type: software
 authors:
   - family-names: "<surname>"
     given-names: "<given name>"
-repository-code: "https://github.com/<user>/hr-heteroresistance-pipeline"
+repository-code: "https://github.com/damianosquitieri96-hr/hr-heteroresistance-pipeline"
 doi: "<DOI>"
 keywords: [heteroresistance, beta-lactam, bloodstream infection, gram-negative, whole-genome sequencing, gene dosage]
