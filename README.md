@@ -1,0 +1,49 @@
+# Beta-lactam heteroresistance in bloodstream infections — analysis pipeline
+
+Analysis code, exact command lines, tool versions and thresholds for the two-centre
+study of beta-lactam heteroresistance in clonal resistant/susceptible (R/S) isolate
+pairs from bloodstream infection episodes (33 pairs, two centres).
+
+This repository documents the pipeline **as it was actually run**. Nothing here is a
+re-implementation or a reconstruction: where a command line could not be recovered from
+the surviving files, this is stated explicitly in [docs/PROVENANCE_GAPS.md](docs/PROVENANCE_GAPS.md)
+rather than filled with plausible parameters.
+
+## Study design (as it bears on the analysis)
+
+Each unit of analysis is a *pair* of isolates recovered from the same bloodstream
+infection episode: one arm resistant (R) on the beta-lactam under study, one susceptible (S).
+Pairs are identified by number only (40, 70, 72, 76, ...). Two centres contributed
+pairs; centre, species and candidate mechanism per pair are in
+`data/HR_cohort_mechanism_from_db.csv`.
+
+All within-pair comparisons are **referenced to the susceptible arm of the same pair**:
+the S assembly is the reference for mapping, for gene-dosage estimation and for joint
+variant calling. No inter-patient comparison is made anywhere in the pipeline.
+
+## How to read this repository
+
+| Path | Content |
+|---|---|
+| `docs/methods.md` | full Methods text; the source the manuscript is cut from |
+| `docs/PROVENANCE_GAPS.md` | parameters that could not be recovered, and what that limits |
+| `pipeline/00_assembly.md` .. `08_figures/` | one file per stage; `.sh`/`.py` if scripted, `.md` if run by hand |
+| `data/` | derived tables only — one row per pair or per variant, no patient-level data |
+| `results/` | final figures |
+
+## Data availability
+
+Raw reads and assemblies are **not** in this repository. They are deposited separately
+in ENA/SRA; the BioProject accession will be added here on release (`<accession>`).
+`data/` contains only derived tables (CC-BY-4.0); code is MIT.
+
+## Coverage of the cohort
+
+Joint two-sample variant calling — and therefore the intra-pair chromosomal distance —
+is available for 17 of 33 pairs. For the remaining 16 pairs
+(70, 72, 76, 87, 103, 137, 155, 173, 189, 197, 200, 211, 219, 220, 231, 257) no joint VCF exists and **no intra-pair distance is reported**.
+Per-pair status: `data/pairs_vcf_availability.csv`.
+
+## Citation
+
+See `CITATION.cff`. Release v1.0.0 is archived at Zenodo (DOI `<DOI>`).

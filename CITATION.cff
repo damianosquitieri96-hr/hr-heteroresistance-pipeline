@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this pipeline, please cite it as below."
+title: "Beta-lactam heteroresistance in bloodstream infections — analysis pipeline"
+abstract: "Analysis code, command lines, tool versions and thresholds for a two-centre study of beta-lactam heteroresistance in 33 clonal resistant/susceptible isolate pairs from bloodstream infection episodes."
+version: 1.0.0
+license: MIT
+type: software
+authors:
+  - family-names: "<surname>"
+    given-names: "<given name>"
+repository-code: "https://github.com/<user>/hr-heteroresistance-pipeline"
+doi: "<DOI>"
+keywords: [heteroresistance, beta-lactam, bloodstream infection, gram-negative, whole-genome sequencing, gene dosage]

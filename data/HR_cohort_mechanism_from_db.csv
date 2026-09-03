@@ -1,0 +1,34 @@
+p,centre,sp2,mech
+103,FPG,E. coli,amplification
+137,FPG,K. pneumoniae,regulatory SNV
+155,FPG,E. cloacae,subclonal non-AMR variant
+173,FPG,E. cloacae,no genomic determinant
+189,FPG,E. coli,amplification
+197,FPG,K. pneumoniae,amplification
+200,FPG,E. coli,amplification
+202,FPG,E. cloacae,subclonal non-AMR variant
+211,FPG,E. coli,amplification
+212,FPG,P. aeruginosa,no genomic determinant
+216,FPG,P. aeruginosa,no genomic determinant
+219,FPG,C. koseri,amplification
+220,FPG,E. coli,amplification
+222,FPG,E. coli,no genomic determinant
+226,FPG,E. coli,sub-threshold dosage
+231,FPG,K. pneumoniae,amplification
+236,FPG,P. aeruginosa,no genomic determinant
+240,FPG,E. coli,subclonal non-AMR variant
+246,FPG,P. aeruginosa,candidate regulatory SNV
+254,FPG,E. coli,no genomic determinant
+257,FPG,E. coli,amplification
+260,FPG,K. pneumoniae,no genomic determinant
+265,FPG,P. aeruginosa,no genomic determinant
+275,FPG,E. coli,no genomic determinant
+279,FPG,P. aeruginosa,regulatory SNV
+283,FPG,E. coli,no genomic determinant
+298,FPG,E. coli,no genomic determinant
+40,UKE,K. aerogenes,candidate regulatory SNV
+70,UKE,E. coli,amplification
+72,UKE,E. coli,no genomic determinant
+76,UKE,E. coli,amplification
+80,UKE,E. cloacae,no genomic determinant
+87,UKE,E. coli,amplification

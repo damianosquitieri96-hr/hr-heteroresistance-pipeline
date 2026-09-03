@@ -1,0 +1,8 @@
+Pair,Species,Mechanism class,Gene,Replicon,Effect,Nucleotide change,Amino-acid change,Allele fraction in resistant member,"MIC, bulk (mg/L)",PAP AUC,log10 surviving fraction at 4x BP,Predicted impact,Confidence,ESM-2 LLR,ESM-2 percentile,RSA,pLDDT (AF model),Distance to catalytic site (A),Identity to reference ortholog
+40*,K. aerogenes,AmpC circuit,ampD,chromosome,nonsense,C>T,W95*,Fixed (afR 0.99),<=4 (Pip),23.56,-0.8,"LOF, certain",high,,,0.18,,8.5,0.84
+80*,E. cloacae,AmpC circuit,ampR,chromosome,missense,T>G,D135A,Fixed (afR 0.99),8,23.84,-1.7,"GOF, probable",high,-5.49,36.5,0.43,,,0.77
+202,E. cloacae,AmpC circuit,ampD,chromosome,missense,C>T,A97V,Fixed (afR 0.97),<=4,17.31,-6.75,"LOF, probable",high,-8.1,14.8,0.0,,6.2,0.82
+216,P. aeruginosa,AmpC circuit,dacB (PBP4),chromosome,missense,G>A,M1I,Fixed (afR 1.00),<=4,20.19,-5.73,"LOF, certain",high,-12.59,9.9,1.03,44.6,92.2,1.0
+216,P. aeruginosa,efflux / efflux regulator,RND efflux MFP,chromosome,missense,A>G,Q171R,Subclonal (afR 0.53),<=4,20.19,-5.73,uncertain / low impact sul folding,low,-1.0,78.6,0.41,98.5,,0.99
+216,P. aeruginosa,efflux / efflux regulator,RND efflux MFP,chromosome,missense,G>T,Q171H,Subclonal (afR 0.50),<=4,20.19,-5.73,uncertain / low impact sul folding,low,-3.43,55.4,0.41,98.5,,0.99
+246,P. aeruginosa,AmpC circuit,dacB (PBP4),chromosome,missense,C>A,N312K,Subclonal (afR 0.60),8,27.02,-4.12,"LOF, probable",medium,-10.18,14.7,0.0,98.9,8.1,1.0
