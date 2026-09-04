@@ -32,6 +32,11 @@ cd pipeline/provenance
 ./recover_e_jointvcf.sh --dry-run     # reports; writes nothing
 ```
 
+All four are written for **bash 3.2**, the version macOS ships as `/bin/bash`, so they avoid
+`mapfile`/`readarray` and associative arrays; they run unchanged on newer bash. Header
+parsing uses `awk -F'\t'` because a `@PG` line is tab-separated and its `CL:` value contains
+the command line with its spaces — splitting on whitespace truncates it to one token.
+
 `recover_b_mapper.sh` needs `samtools`; `recover_e_jointvcf.sh --run` needs `bcftools`
 (the existing call sets are 1.24 + htslib 1.24, and it warns if yours differs). Pass a
 different root as the first argument if the drive is mounted elsewhere.

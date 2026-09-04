@@ -17,14 +17,21 @@ command -v samtools >/dev/null || { echo "samtools non trovato nel PATH. Attiva 
 [[ -d $ROOT ]] || { echo "directory non trovata: $ROOT — monta l'SSD o passa il percorso giusto come primo argomento." >&2; exit 1; }
 
 echo "cerco BAM sotto $ROOT ..." >&2
-mapfile -t BAMS < <(find "$ROOT" -type f \( -name '*.bam' -o -name '*.cram' \) 2>/dev/null | sort)
-echo "BAM/CRAM trovati: ${#BAMS[@]}" >&2
-(( ${#BAMS[@]} )) || { echo "nessun BAM trovato: controlla il percorso." >&2; exit 1; }
+# no mapfile/readarray here: macOS ships bash 3.2, where both are absent. The file list
+# goes through a temp file, which also keeps `set -u` away from empty-array expansion.
+LIST=$(mktemp)
+trap 'rm -f "$LIST"' EXIT
+find "$ROOT" -type f \( -name '*.bam' -o -name '*.cram' \) 2>/dev/null | sort > "$LIST"
+N=$(tr -cd '\n' < "$LIST" | wc -c | tr -d ' ')
+echo "BAM/CRAM trovati: $N" >&2
+[ "$N" -gt 0 ] || { echo "nessun BAM trovato: controlla il percorso." >&2; exit 1; }
 
 {
   printf 'file\tpg_id\tpg_pn\tpg_vn\tpg_cl\n'
-  for b in "${BAMS[@]}"; do
-    samtools view -H "$b" 2>/dev/null | awk -v f="$(basename "$b")" '
+  while IFS= read -r b; do
+    # -F'\t' is load-bearing: a @PG line is tab-separated and its CL: value contains the
+    # command line, spaces included. Splitting on whitespace would truncate it to one token.
+    samtools view -H "$b" 2>/dev/null </dev/null | awk -F'\t' -v f="$(basename "$b")" '
       /^@PG/ {
         id=""; pn=""; vn=""; cl="";
         for (i = 2; i <= NF; i++) {
@@ -36,7 +43,7 @@ echo "BAM/CRAM trovati: ${#BAMS[@]}" >&2
         }
         print f "\t" id "\t" pn "\t" vn "\t" cl;
       }'
-  done
+  done < "$LIST"
 } > "$OUT"
 
 echo >&2
