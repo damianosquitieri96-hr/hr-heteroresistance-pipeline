@@ -78,7 +78,23 @@ Filled because they follow from the study design: `library_strategy=WGS`,
 
 Deliberately empty, to be completed from the sequencing records: `platform`,
 `instrument_model`, `library_name`, `nominal_length`, `nominal_sdev`,
-`library_construction_protocol`. `study_accession` is `TO_FILL` until the study (project)
+`library_construction_protocol`.
+
+Two facts recovered on 2026-09-04 that bear on filling these, from
+`docs/PROVENANCE_GAPS.md` items (b) and (c). First, the long-read files to upload are on the
+working drive as `HR_WORK/<pair>/<pair>{R,S}.fastq.gz` — these are the full libraries;
+`sub.fq.gz` in the same tree is a subsampled set made for assembly and must **not** be
+deposited in their place. Second, the assemblies were made with Flye's `--nano-hq` preset,
+which points to Q20-era chemistry but does **not** identify an instrument model: do not fill
+`instrument_model` from it. `platform` for the 66 long-read runs is `OXFORD_NANOPORE` on the
+strength of the mapper preset (`-ax map-ont`) and the assembler preset together, and that
+one is safe to fill.
+
+The `design_description` field was corrected on the same date: it previously said the short
+reads were used for hybrid-assembly polishing and joint variant calling, and both were
+wrong — the assemblies are long-read only and the 17 joint call sets were made from the
+long-read alignments. Had it gone to ENA as written, the deposited records would have
+misdescribed all 101 libraries. `study_accession` is `TO_FILL` until the study (project)
 is registered in Webin — register it first, then paste the PRJEB accession into that
 column.
 

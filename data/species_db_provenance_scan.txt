@@ -1,0 +1,6 @@
+# scan di /Volumes/PortableSSD/HR_WORK — 2026-09-04T08:25:58Z
+
+## output per tool di classificazione
+  nessun output di classificazione trovato sotto /Volumes/PortableSSD/HR_WORK
+
+## righe che dichiarano un database o una release

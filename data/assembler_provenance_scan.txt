@@ -1,0 +1,195 @@
+# scan di /Volumes/PortableSSD/HR_WORK â€” 2026-09-04T08:25:22Z
+
+## file firma per assemblatore
+  [flye] /Volumes/PortableSSD/HR_WORK/155/.asm_155R/flye.log
+  [flye] /Volumes/PortableSSD/HR_WORK/155/.asm_155R/flye/flye.log
+  [flye] /Volumes/PortableSSD/HR_WORK/155/.asm_155S/flye.log
+  [flye] /Volumes/PortableSSD/HR_WORK/155/.asm_155S/flye/flye.log
+  [flye] /Volumes/PortableSSD/HR_WORK/173/.asm_173R/flye.log
+  [flye] /Volumes/PortableSSD/HR_WORK/173/.asm_173R/flye/flye.log
+  [flye] /Volumes/PortableSSD/HR_WORK/173/.asm_173S/flye.log
+  [flye] /Volumes/PortableSSD/HR_WORK/173/.asm_173S/flye/flye.log
+  [flye] /Volumes/PortableSSD/HR_WORK/189/.asm_189R/flye.log
+  [flye] /Volumes/PortableSSD/HR_WORK/189/.asm_189R/flye/flye.log
+  [flye] /Volumes/PortableSSD/HR_WORK/189/.asm_189S/flye.log
+  [flye] /Volumes/PortableSSD/HR_WORK/189/.asm_189S/flye/flye.log
+  [flye] /Volumes/PortableSSD/HR_WORK/197/.asm_197R/flye.log
+  [flye] /Volumes/PortableSSD/HR_WORK/197/.asm_197R/flye/flye.log
+  [flye] /Volumes/PortableSSD/HR_WORK/197/.asm_197S/flye.log
+  [flye] /Volumes/PortableSSD/HR_WORK/197/.asm_197S/flye/flye.log
+  [flye] /Volumes/PortableSSD/HR_WORK/200/.asm_200R/flye.log
+  [flye] /Volumes/PortableSSD/HR_WORK/200/.asm_200R/flye/flye.log
+  [flye] /Volumes/PortableSSD/HR_WORK/200/.asm_200S/flye.log
+  [flye] /Volumes/PortableSSD/HR_WORK/200/.asm_200S/flye/flye.log
+  [flye] /Volumes/PortableSSD/HR_WORK/155/.asm_155R/flye/params.json
+  [flye] /Volumes/PortableSSD/HR_WORK/155/.asm_155S/flye/params.json
+  [flye] /Volumes/PortableSSD/HR_WORK/173/.asm_173R/flye/params.json
+  [flye] /Volumes/PortableSSD/HR_WORK/173/.asm_173S/flye/params.json
+  [flye] /Volumes/PortableSSD/HR_WORK/189/.asm_189R/flye/params.json
+  [flye] /Volumes/PortableSSD/HR_WORK/189/.asm_189S/flye/params.json
+  [flye] /Volumes/PortableSSD/HR_WORK/197/.asm_197R/flye/params.json
+  [flye] /Volumes/PortableSSD/HR_WORK/197/.asm_197S/flye/params.json
+  [flye] /Volumes/PortableSSD/HR_WORK/200/.asm_200R/flye/params.json
+  [flye] /Volumes/PortableSSD/HR_WORK/200/.asm_200S/flye/params.json
+  [flye] /Volumes/PortableSSD/HR_WORK/202/.asm_202R/flye/params.json
+  [flye] /Volumes/PortableSSD/HR_WORK/202/.asm_202S/flye/params.json
+  [flye] /Volumes/PortableSSD/HR_WORK/211/.asm_211R/flye/params.json
+  [flye] /Volumes/PortableSSD/HR_WORK/211/.asm_211S/flye/params.json
+  [flye] /Volumes/PortableSSD/HR_WORK/212/.asm_212R/flye/params.json
+  [flye] /Volumes/PortableSSD/HR_WORK/212/.asm_212S/flye/params.json
+  [flye] /Volumes/PortableSSD/HR_WORK/216/.asm_216R/flye/params.json
+  [flye] /Volumes/PortableSSD/HR_WORK/216/.asm_216S/flye/params.json
+  [flye] /Volumes/PortableSSD/HR_WORK/103/.asm_103R/flye/params.json
+  [flye] /Volumes/PortableSSD/HR_WORK/103/.asm_103S/flye/params.json
+  [flye] /Volumes/PortableSSD/HR_WORK/155/.asm_155R/flye/assembly_info.txt
+  [flye] /Volumes/PortableSSD/HR_WORK/155/.asm_155S/flye/assembly_info.txt
+  [flye] /Volumes/PortableSSD/HR_WORK/173/.asm_173R/flye/assembly_info.txt
+  [flye] /Volumes/PortableSSD/HR_WORK/173/.asm_173S/flye/assembly_info.txt
+  [flye] /Volumes/PortableSSD/HR_WORK/189/.asm_189R/flye/assembly_info.txt
+  [flye] /Volumes/PortableSSD/HR_WORK/189/.asm_189S/flye/assembly_info.txt
+  [flye] /Volumes/PortableSSD/HR_WORK/197/.asm_197R/flye/assembly_info.txt
+  [flye] /Volumes/PortableSSD/HR_WORK/197/.asm_197S/flye/assembly_info.txt
+  [flye] /Volumes/PortableSSD/HR_WORK/200/.asm_200R/flye/assembly_info.txt
+  [flye] /Volumes/PortableSSD/HR_WORK/200/.asm_200S/flye/assembly_info.txt
+  [flye] /Volumes/PortableSSD/HR_WORK/202/.asm_202R/flye/assembly_info.txt
+  [flye] /Volumes/PortableSSD/HR_WORK/202/.asm_202S/flye/assembly_info.txt
+  [flye] /Volumes/PortableSSD/HR_WORK/211/.asm_211R/flye/assembly_info.txt
+  [flye] /Volumes/PortableSSD/HR_WORK/211/.asm_211S/flye/assembly_info.txt
+  [flye] /Volumes/PortableSSD/HR_WORK/212/.asm_212R/flye/assembly_info.txt
+  [flye] /Volumes/PortableSSD/HR_WORK/212/.asm_212S/flye/assembly_info.txt
+  [flye] /Volumes/PortableSSD/HR_WORK/216/.asm_216R/flye/assembly_info.txt
+  [flye] /Volumes/PortableSSD/HR_WORK/216/.asm_216S/flye/assembly_info.txt
+  [flye] /Volumes/PortableSSD/HR_WORK/103/.asm_103R/flye/assembly_info.txt
+  [flye] /Volumes/PortableSSD/HR_WORK/103/.asm_103S/flye/assembly_info.txt
+
+## command line registrate nei log
+  --- /Volumes/PortableSSD/HR_WORK/155/.asm_155R/flye.log
+      [2026-08-17 19:21:49] INFO: Starting Flye 2.9.6-b1802
+  --- /Volumes/PortableSSD/HR_WORK/155/.asm_155R/flye/flye.log
+      [2026-08-17 19:21:49] root: INFO: Starting Flye 2.9.6-b1802
+      [2026-08-17 19:21:49] root: DEBUG: Cmd: /Users/damsq/miniconda3/envs/hrassembly/bin/flye --nano-hq /Volumes/PortableSSD/HR_WORK/155/.asm_155R/sub.fq.gz --out-dir /Volumes/PortableSSD/HR_WORK/155/.asm_155R/flye --threads 8 --genome-size 5m
+      [2026-08-17 19:21:53] root: DEBUG: Running: flye-modules assemble --reads /Volumes/PortableSSD/HR_WORK/155/.asm_155R/sub.fq.gz --out-asm /Volumes/PortableSSD/HR_WORK/155/.asm_155R/flye/00-assembly/draft_assembly.fasta --config /Users/damsq/miniconda3/envs/hrassembly/lib/python3.13/site-packages/flye/config/bin_cfg/asm_nano_hq.cfg --log /Volumes/PortableSSD/HR_WORK/155/.asm_155R/flye/flye.log --threads 8 --genome-size 5000000 --min-ovlp 10000
+      [2026-08-17 19:31:23] root: DEBUG: Running: flye-modules repeat --disjointigs /Volumes/PortableSSD/HR_WORK/155/.asm_155R/flye/10-consensus/consensus.fasta --reads /Volumes/PortableSSD/HR_WORK/155/.asm_155R/sub.fq.gz --out-dir /Volumes/PortableSSD/HR_WORK/155/.asm_155R/flye/20-repeat --config /Users/damsq/miniconda3/envs/hrassembly/lib/python3.13/site-packages/flye/config/bin_cfg/asm_nano_hq.cfg --log /Volumes/PortableSSD/HR_WORK/155/.asm_155R/flye/flye.log --threads 8 --min-ovlp 10000
+      [2026-08-17 19:31:49] root: DEBUG: Running: flye-modules contigger --graph-edges /Volumes/PortableSSD/HR_WORK/155/.asm_155R/flye/20-repeat/repeat_graph_edges.fasta --reads /Volumes/PortableSSD/HR_WORK/155/.asm_155R/sub.fq.gz --out-dir /Volumes/PortableSSD/HR_WORK/155/.asm_155R/flye/30-contigger --config /Users/damsq/miniconda3/envs/hrassembly/lib/python3.13/site-packages/flye/config/bin_cfg/asm_nano_hq.cfg --repeat-graph /Volumes/PortableSSD/HR_WORK/155/.asm_155R/flye/20-repeat/repeat_graph_dump --graph-aln /Volumes/PortableSSD/HR_WORK/155/.asm_155R/flye/20-repeat/read_alignment_dump --log /Volumes/PortableSSD/HR_WORK/155/.asm_155R/flye/flye.log --threads 8 --min-ovlp 10000
+  --- /Volumes/PortableSSD/HR_WORK/155/.asm_155R/flye/params.json
+      (nessuna riga di comando riconoscibile)
+  --- /Volumes/PortableSSD/HR_WORK/155/.asm_155R/flye/assembly_info.txt
+      (nessuna riga di comando riconoscibile)
+  --- /Volumes/PortableSSD/HR_WORK/155/.asm_155S/flye.log
+      [2026-08-17 19:37:07] INFO: Starting Flye 2.9.6-b1802
+  --- /Volumes/PortableSSD/HR_WORK/155/.asm_155S/flye/flye.log
+      [2026-08-17 19:37:07] root: INFO: Starting Flye 2.9.6-b1802
+      [2026-08-17 19:37:07] root: DEBUG: Cmd: /Users/damsq/miniconda3/envs/hrassembly/bin/flye --nano-hq /Volumes/PortableSSD/HR_WORK/155/.asm_155S/sub.fq.gz --out-dir /Volumes/PortableSSD/HR_WORK/155/.asm_155S/flye --threads 8 --genome-size 5m
+      [2026-08-17 19:37:11] root: DEBUG: Running: flye-modules assemble --reads /Volumes/PortableSSD/HR_WORK/155/.asm_155S/sub.fq.gz --out-asm /Volumes/PortableSSD/HR_WORK/155/.asm_155S/flye/00-assembly/draft_assembly.fasta --config /Users/damsq/miniconda3/envs/hrassembly/lib/python3.13/site-packages/flye/config/bin_cfg/asm_nano_hq.cfg --log /Volumes/PortableSSD/HR_WORK/155/.asm_155S/flye/flye.log --threads 8 --genome-size 5000000 --min-ovlp 10000
+      [2026-08-17 19:45:24] root: DEBUG: Running: flye-modules repeat --disjointigs /Volumes/PortableSSD/HR_WORK/155/.asm_155S/flye/10-consensus/consensus.fasta --reads /Volumes/PortableSSD/HR_WORK/155/.asm_155S/sub.fq.gz --out-dir /Volumes/PortableSSD/HR_WORK/155/.asm_155S/flye/20-repeat --config /Users/damsq/miniconda3/envs/hrassembly/lib/python3.13/site-packages/flye/config/bin_cfg/asm_nano_hq.cfg --log /Volumes/PortableSSD/HR_WORK/155/.asm_155S/flye/flye.log --threads 8 --min-ovlp 10000
+      [2026-08-17 19:45:52] root: DEBUG: Running: flye-modules contigger --graph-edges /Volumes/PortableSSD/HR_WORK/155/.asm_155S/flye/20-repeat/repeat_graph_edges.fasta --reads /Volumes/PortableSSD/HR_WORK/155/.asm_155S/sub.fq.gz --out-dir /Volumes/PortableSSD/HR_WORK/155/.asm_155S/flye/30-contigger --config /Users/damsq/miniconda3/envs/hrassembly/lib/python3.13/site-packages/flye/config/bin_cfg/asm_nano_hq.cfg --repeat-graph /Volumes/PortableSSD/HR_WORK/155/.asm_155S/flye/20-repeat/repeat_graph_dump --graph-aln /Volumes/PortableSSD/HR_WORK/155/.asm_155S/flye/20-repeat/read_alignment_dump --log /Volumes/PortableSSD/HR_WORK/155/.asm_155S/flye/flye.log --threads 8 --min-ovlp 10000
+  --- /Volumes/PortableSSD/HR_WORK/155/.asm_155S/flye/params.json
+      (nessuna riga di comando riconoscibile)
+  --- /Volumes/PortableSSD/HR_WORK/155/.asm_155S/flye/assembly_info.txt
+      (nessuna riga di comando riconoscibile)
+  --- /Volumes/PortableSSD/HR_WORK/155/annot_155S/155S.log
+      (nessuna riga di comando riconoscibile)
+  --- /Volumes/PortableSSD/HR_WORK/155/annot_155S/._155S.log
+      (nessuna riga di comando riconoscibile)
+  --- /Volumes/PortableSSD/HR_WORK/173/.asm_173R/flye.log
+      [2026-08-17 21:10:19] INFO: Starting Flye 2.9.6-b1802
+  --- /Volumes/PortableSSD/HR_WORK/173/.asm_173R/flye/flye.log
+      [2026-08-17 21:10:19] root: INFO: Starting Flye 2.9.6-b1802
+      [2026-08-17 21:10:19] root: DEBUG: Cmd: /Users/damsq/miniconda3/envs/hrassembly/bin/flye --nano-hq /Volumes/PortableSSD/HR_WORK/173/.asm_173R/sub.fq.gz --out-dir /Volumes/PortableSSD/HR_WORK/173/.asm_173R/flye --threads 5 --genome-size 5m
+      [2026-08-17 21:10:21] root: DEBUG: Running: flye-modules assemble --reads /Volumes/PortableSSD/HR_WORK/173/.asm_173R/sub.fq.gz --out-asm /Volumes/PortableSSD/HR_WORK/173/.asm_173R/flye/00-assembly/draft_assembly.fasta --config /Users/damsq/miniconda3/envs/hrassembly/lib/python3.13/site-packages/flye/config/bin_cfg/asm_nano_hq.cfg --log /Volumes/PortableSSD/HR_WORK/173/.asm_173R/flye/flye.log --threads 5 --genome-size 5000000 --min-ovlp 10000
+      [2026-08-17 21:15:03] root: DEBUG: Running: flye-modules repeat --disjointigs /Volumes/PortableSSD/HR_WORK/173/.asm_173R/flye/10-consensus/consensus.fasta --reads /Volumes/PortableSSD/HR_WORK/173/.asm_173R/sub.fq.gz --out-dir /Volumes/PortableSSD/HR_WORK/173/.asm_173R/flye/20-repeat --config /Users/damsq/miniconda3/envs/hrassembly/lib/python3.13/site-packages/flye/config/bin_cfg/asm_nano_hq.cfg --log /Volumes/PortableSSD/HR_WORK/173/.asm_173R/flye/flye.log --threads 5 --min-ovlp 10000
+      [2026-08-17 21:15:20] root: DEBUG: Running: flye-modules contigger --graph-edges /Volumes/PortableSSD/HR_WORK/173/.asm_173R/flye/20-repeat/repeat_graph_edges.fasta --reads /Volumes/PortableSSD/HR_WORK/173/.asm_173R/sub.fq.gz --out-dir /Volumes/PortableSSD/HR_WORK/173/.asm_173R/flye/30-contigger --config /Users/damsq/miniconda3/envs/hrassembly/lib/python3.13/site-packages/flye/config/bin_cfg/asm_nano_hq.cfg --repeat-graph /Volumes/PortableSSD/HR_WORK/173/.asm_173R/flye/20-repeat/repeat_graph_dump --graph-aln /Volumes/PortableSSD/HR_WORK/173/.asm_173R/flye/20-repeat/read_alignment_dump --log /Volumes/PortableSSD/HR_WORK/173/.asm_173R/flye/flye.log --threads 5 --min-ovlp 10000
+  --- /Volumes/PortableSSD/HR_WORK/173/.asm_173R/flye/params.json
+      (nessuna riga di comando riconoscibile)
+  --- /Volumes/PortableSSD/HR_WORK/173/.asm_173R/flye/assembly_info.txt
+      (nessuna riga di comando riconoscibile)
+  --- /Volumes/PortableSSD/HR_WORK/173/.asm_173S/flye.log
+      [2026-08-17 21:19:48] INFO: Starting Flye 2.9.6-b1802
+  --- /Volumes/PortableSSD/HR_WORK/173/.asm_173S/flye/flye.log
+      [2026-08-17 21:19:48] root: INFO: Starting Flye 2.9.6-b1802
+      [2026-08-17 21:19:48] root: DEBUG: Cmd: /Users/damsq/miniconda3/envs/hrassembly/bin/flye --nano-hq /Volumes/PortableSSD/HR_WORK/173/.asm_173S/sub.fq.gz --out-dir /Volumes/PortableSSD/HR_WORK/173/.asm_173S/flye --threads 5 --genome-size 5m
+      [2026-08-17 21:19:50] root: DEBUG: Running: flye-modules assemble --reads /Volumes/PortableSSD/HR_WORK/173/.asm_173S/sub.fq.gz --out-asm /Volumes/PortableSSD/HR_WORK/173/.asm_173S/flye/00-assembly/draft_assembly.fasta --config /Users/damsq/miniconda3/envs/hrassembly/lib/python3.13/site-packages/flye/config/bin_cfg/asm_nano_hq.cfg --log /Volumes/PortableSSD/HR_WORK/173/.asm_173S/flye/flye.log --threads 5 --genome-size 5000000 --min-ovlp 10000
+      [2026-08-17 21:24:53] root: DEBUG: Running: flye-modules repeat --disjointigs /Volumes/PortableSSD/HR_WORK/173/.asm_173S/flye/10-consensus/consensus.fasta --reads /Volumes/PortableSSD/HR_WORK/173/.asm_173S/sub.fq.gz --out-dir /Volumes/PortableSSD/HR_WORK/173/.asm_173S/flye/20-repeat --config /Users/damsq/miniconda3/envs/hrassembly/lib/python3.13/site-packages/flye/config/bin_cfg/asm_nano_hq.cfg --log /Volumes/PortableSSD/HR_WORK/173/.asm_173S/flye/flye.log --threads 5 --min-ovlp 10000
+      [2026-08-17 21:25:09] root: DEBUG: Running: flye-modules contigger --graph-edges /Volumes/PortableSSD/HR_WORK/173/.asm_173S/flye/20-repeat/repeat_graph_edges.fasta --reads /Volumes/PortableSSD/HR_WORK/173/.asm_173S/sub.fq.gz --out-dir /Volumes/PortableSSD/HR_WORK/173/.asm_173S/flye/30-contigger --config /Users/damsq/miniconda3/envs/hrassembly/lib/python3.13/site-packages/flye/config/bin_cfg/asm_nano_hq.cfg --repeat-graph /Volumes/PortableSSD/HR_WORK/173/.asm_173S/flye/20-repeat/repeat_graph_dump --graph-aln /Volumes/PortableSSD/HR_WORK/173/.asm_173S/flye/20-repeat/read_alignment_dump --log /Volumes/PortableSSD/HR_WORK/173/.asm_173S/flye/flye.log --threads 5 --min-ovlp 10000
+  --- /Volumes/PortableSSD/HR_WORK/173/.asm_173S/flye/params.json
+      (nessuna riga di comando riconoscibile)
+  --- /Volumes/PortableSSD/HR_WORK/173/.asm_173S/flye/assembly_info.txt
+      (nessuna riga di comando riconoscibile)
+  --- /Volumes/PortableSSD/HR_WORK/173/annot_173S/173S.log
+      (nessuna riga di comando riconoscibile)
+  --- /Volumes/PortableSSD/HR_WORK/173/annot_173S/._173S.log
+      (nessuna riga di comando riconoscibile)
+  --- /Volumes/PortableSSD/HR_WORK/189/.asm_189R/flye.log
+      [2026-08-17 22:06:37] INFO: Starting Flye 2.9.6-b1802
+  --- /Volumes/PortableSSD/HR_WORK/189/.asm_189R/flye/flye.log
+      [2026-08-17 22:06:37] root: INFO: Starting Flye 2.9.6-b1802
+      [2026-08-17 22:06:37] root: DEBUG: Cmd: /Users/damsq/miniconda3/envs/hrassembly/bin/flye --nano-hq /Volumes/PortableSSD/HR_WORK/189/.asm_189R/sub.fq.gz --out-dir /Volumes/PortableSSD/HR_WORK/189/.asm_189R/flye --threads 5 --genome-size 5m
+      [2026-08-17 22:06:39] root: DEBUG: Running: flye-modules assemble --reads /Volumes/PortableSSD/HR_WORK/189/.asm_189R/sub.fq.gz --out-asm /Volumes/PortableSSD/HR_WORK/189/.asm_189R/flye/00-assembly/draft_assembly.fasta --config /Users/damsq/miniconda3/envs/hrassembly/lib/python3.13/site-packages/flye/config/bin_cfg/asm_nano_hq.cfg --log /Volumes/PortableSSD/HR_WORK/189/.asm_189R/flye/flye.log --threads 5 --genome-size 5000000 --min-ovlp 10000
+      [2026-08-17 22:16:41] root: DEBUG: Running: flye-modules repeat --disjointigs /Volumes/PortableSSD/HR_WORK/189/.asm_189R/flye/10-consensus/consensus.fasta --reads /Volumes/PortableSSD/HR_WORK/189/.asm_189R/sub.fq.gz --out-dir /Volumes/PortableSSD/HR_WORK/189/.asm_189R/flye/20-repeat --config /Users/damsq/miniconda3/envs/hrassembly/lib/python3.13/site-packages/flye/config/bin_cfg/asm_nano_hq.cfg --log /Volumes/PortableSSD/HR_WORK/189/.asm_189R/flye/flye.log --threads 5 --min-ovlp 10000
+      [2026-08-17 22:16:57] root: DEBUG: Running: flye-modules contigger --graph-edges /Volumes/PortableSSD/HR_WORK/189/.asm_189R/flye/20-repeat/repeat_graph_edges.fasta --reads /Volumes/PortableSSD/HR_WORK/189/.asm_189R/sub.fq.gz --out-dir /Volumes/PortableSSD/HR_WORK/189/.asm_189R/flye/30-contigger --config /Users/damsq/miniconda3/envs/hrassembly/lib/python3.13/site-packages/flye/config/bin_cfg/asm_nano_hq.cfg --repeat-graph /Volumes/PortableSSD/HR_WORK/189/.asm_189R/flye/20-repeat/repeat_graph_dump --graph-aln /Volumes/PortableSSD/HR_WORK/189/.asm_189R/flye/20-repeat/read_alignment_dump --log /Volumes/PortableSSD/HR_WORK/189/.asm_189R/flye/flye.log --threads 5 --min-ovlp 10000
+  --- /Volumes/PortableSSD/HR_WORK/189/.asm_189R/flye/params.json
+      (nessuna riga di comando riconoscibile)
+  --- /Volumes/PortableSSD/HR_WORK/189/.asm_189R/flye/assembly_info.txt
+      (nessuna riga di comando riconoscibile)
+  --- /Volumes/PortableSSD/HR_WORK/189/.asm_189S/flye.log
+      [2026-08-17 22:21:20] INFO: Starting Flye 2.9.6-b1802
+  --- /Volumes/PortableSSD/HR_WORK/189/.asm_189S/flye/flye.log
+      [2026-08-17 22:21:20] root: INFO: Starting Flye 2.9.6-b1802
+      [2026-08-17 22:21:20] root: DEBUG: Cmd: /Users/damsq/miniconda3/envs/hrassembly/bin/flye --nano-hq /Volumes/PortableSSD/HR_WORK/189/.asm_189S/sub.fq.gz --out-dir /Volumes/PortableSSD/HR_WORK/189/.asm_189S/flye --threads 5 --genome-size 5m
+      [2026-08-17 22:21:23] root: DEBUG: Running: flye-modules assemble --reads /Volumes/PortableSSD/HR_WORK/189/.asm_189S/sub.fq.gz --out-asm /Volumes/PortableSSD/HR_WORK/189/.asm_189S/flye/00-assembly/draft_assembly.fasta --config /Users/damsq/miniconda3/envs/hrassembly/lib/python3.13/site-packages/flye/config/bin_cfg/asm_nano_hq.cfg --log /Volumes/PortableSSD/HR_WORK/189/.asm_189S/flye/flye.log --threads 5 --genome-size 5000000 --min-ovlp 10000
+      [2026-08-17 22:33:00] root: DEBUG: Running: flye-modules repeat --disjointigs /Volumes/PortableSSD/HR_WORK/189/.asm_189S/flye/10-consensus/consensus.fasta --reads /Volumes/PortableSSD/HR_WORK/189/.asm_189S/sub.fq.gz --out-dir /Volumes/PortableSSD/HR_WORK/189/.asm_189S/flye/20-repeat --config /Users/damsq/miniconda3/envs/hrassembly/lib/python3.13/site-packages/flye/config/bin_cfg/asm_nano_hq.cfg --log /Volumes/PortableSSD/HR_WORK/189/.asm_189S/flye/flye.log --threads 5 --min-ovlp 10000
+      [2026-08-17 22:33:18] root: DEBUG: Running: flye-modules contigger --graph-edges /Volumes/PortableSSD/HR_WORK/189/.asm_189S/flye/20-repeat/repeat_graph_edges.fasta --reads /Volumes/PortableSSD/HR_WORK/189/.asm_189S/sub.fq.gz --out-dir /Volumes/PortableSSD/HR_WORK/189/.asm_189S/flye/30-contigger --config /Users/damsq/miniconda3/envs/hrassembly/lib/python3.13/site-packages/flye/config/bin_cfg/asm_nano_hq.cfg --repeat-graph /Volumes/PortableSSD/HR_WORK/189/.asm_189S/flye/20-repeat/repeat_graph_dump --graph-aln /Volumes/PortableSSD/HR_WORK/189/.asm_189S/flye/20-repeat/read_alignment_dump --log /Volumes/PortableSSD/HR_WORK/189/.asm_189S/flye/flye.log --threads 5 --min-ovlp 10000
+  --- /Volumes/PortableSSD/HR_WORK/189/.asm_189S/flye/params.json
+      (nessuna riga di comando riconoscibile)
+  --- /Volumes/PortableSSD/HR_WORK/189/.asm_189S/flye/assembly_info.txt
+      (nessuna riga di comando riconoscibile)
+  --- /Volumes/PortableSSD/HR_WORK/189/annot_189S/189S.log
+      (nessuna riga di comando riconoscibile)
+  --- /Volumes/PortableSSD/HR_WORK/189/annot_189S/._189S.log
+      (nessuna riga di comando riconoscibile)
+  --- /Volumes/PortableSSD/HR_WORK/197/.asm_197R/flye.log
+      [2026-08-18 08:29:57] INFO: Starting Flye 2.9.6-b1802
+  --- /Volumes/PortableSSD/HR_WORK/197/.asm_197R/flye/flye.log
+      [2026-08-18 08:29:57] root: INFO: Starting Flye 2.9.6-b1802
+      [2026-08-18 08:29:57] root: DEBUG: Cmd: /Users/damsq/miniconda3/envs/hrassembly/bin/flye --nano-hq /Volumes/PortableSSD/HR_WORK/197/.asm_197R/sub.fq.gz --out-dir /Volumes/PortableSSD/HR_WORK/197/.asm_197R/flye --threads 5 --genome-size 5m
+      [2026-08-18 08:29:59] root: DEBUG: Running: flye-modules assemble --reads /Volumes/PortableSSD/HR_WORK/197/.asm_197R/sub.fq.gz --out-asm /Volumes/PortableSSD/HR_WORK/197/.asm_197R/flye/00-assembly/draft_assembly.fasta --config /Users/damsq/miniconda3/envs/hrassembly/lib/python3.13/site-packages/flye/config/bin_cfg/asm_nano_hq.cfg --log /Volumes/PortableSSD/HR_WORK/197/.asm_197R/flye/flye.log --threads 5 --genome-size 5000000 --min-ovlp 10000
+      [2026-08-18 08:41:36] root: DEBUG: Running: flye-modules repeat --disjointigs /Volumes/PortableSSD/HR_WORK/197/.asm_197R/flye/10-consensus/consensus.fasta --reads /Volumes/PortableSSD/HR_WORK/197/.asm_197R/sub.fq.gz --out-dir /Volumes/PortableSSD/HR_WORK/197/.asm_197R/flye/20-repeat --config /Users/damsq/miniconda3/envs/hrassembly/lib/python3.13/site-packages/flye/config/bin_cfg/asm_nano_hq.cfg --log /Volumes/PortableSSD/HR_WORK/197/.asm_197R/flye/flye.log --threads 5 --min-ovlp 10000
+      [2026-08-18 08:41:56] root: DEBUG: Running: flye-modules contigger --graph-edges /Volumes/PortableSSD/HR_WORK/197/.asm_197R/flye/20-repeat/repeat_graph_edges.fasta --reads /Volumes/PortableSSD/HR_WORK/197/.asm_197R/sub.fq.gz --out-dir /Volumes/PortableSSD/HR_WORK/197/.asm_197R/flye/30-contigger --config /Users/damsq/miniconda3/envs/hrassembly/lib/python3.13/site-packages/flye/config/bin_cfg/asm_nano_hq.cfg --repeat-graph /Volumes/PortableSSD/HR_WORK/197/.asm_197R/flye/20-repeat/repeat_graph_dump --graph-aln /Volumes/PortableSSD/HR_WORK/197/.asm_197R/flye/20-repeat/read_alignment_dump --log /Volumes/PortableSSD/HR_WORK/197/.asm_197R/flye/flye.log --threads 5 --min-ovlp 10000
+  --- /Volumes/PortableSSD/HR_WORK/197/.asm_197R/flye/params.json
+      (nessuna riga di comando riconoscibile)
+  --- /Volumes/PortableSSD/HR_WORK/197/.asm_197R/flye/assembly_info.txt
+      (nessuna riga di comando riconoscibile)
+  --- /Volumes/PortableSSD/HR_WORK/197/.asm_197S/flye.log
+      [2026-08-18 08:45:35] INFO: Starting Flye 2.9.6-b1802
+  --- /Volumes/PortableSSD/HR_WORK/197/.asm_197S/flye/flye.log
+      [2026-08-18 08:45:35] root: INFO: Starting Flye 2.9.6-b1802
+      [2026-08-18 08:45:35] root: DEBUG: Cmd: /Users/damsq/miniconda3/envs/hrassembly/bin/flye --nano-hq /Volumes/PortableSSD/HR_WORK/197/.asm_197S/sub.fq.gz --out-dir /Volumes/PortableSSD/HR_WORK/197/.asm_197S/flye --threads 5 --genome-size 5m
+      [2026-08-18 08:45:37] root: DEBUG: Running: flye-modules assemble --reads /Volumes/PortableSSD/HR_WORK/197/.asm_197S/sub.fq.gz --out-asm /Volumes/PortableSSD/HR_WORK/197/.asm_197S/flye/00-assembly/draft_assembly.fasta --config /Users/damsq/miniconda3/envs/hrassembly/lib/python3.13/site-packages/flye/config/bin_cfg/asm_nano_hq.cfg --log /Volumes/PortableSSD/HR_WORK/197/.asm_197S/flye/flye.log --threads 5 --genome-size 5000000 --min-ovlp 10000
+      [2026-08-18 08:58:40] root: DEBUG: Running: flye-modules repeat --disjointigs /Volumes/PortableSSD/HR_WORK/197/.asm_197S/flye/10-consensus/consensus.fasta --reads /Volumes/PortableSSD/HR_WORK/197/.asm_197S/sub.fq.gz --out-dir /Volumes/PortableSSD/HR_WORK/197/.asm_197S/flye/20-repeat --config /Users/damsq/miniconda3/envs/hrassembly/lib/python3.13/site-packages/flye/config/bin_cfg/asm_nano_hq.cfg --log /Volumes/PortableSSD/HR_WORK/197/.asm_197S/flye/flye.log --threads 5 --min-ovlp 10000
+      [2026-08-18 08:59:03] root: DEBUG: Running: flye-modules contigger --graph-edges /Volumes/PortableSSD/HR_WORK/197/.asm_197S/flye/20-repeat/repeat_graph_edges.fasta --reads /Volumes/PortableSSD/HR_WORK/197/.asm_197S/sub.fq.gz --out-dir /Volumes/PortableSSD/HR_WORK/197/.asm_197S/flye/30-contigger --config /Users/damsq/miniconda3/envs/hrassembly/lib/python3.13/site-packages/flye/config/bin_cfg/asm_nano_hq.cfg --repeat-graph /Volumes/PortableSSD/HR_WORK/197/.asm_197S/flye/20-repeat/repeat_graph_dump --graph-aln /Volumes/PortableSSD/HR_WORK/197/.asm_197S/flye/20-repeat/read_alignment_dump --log /Volumes/PortableSSD/HR_WORK/197/.asm_197S/flye/flye.log --threads 5 --min-ovlp 10000
+  --- /Volumes/PortableSSD/HR_WORK/197/.asm_197S/flye/params.json
+      (nessuna riga di comando riconoscibile)
+  --- /Volumes/PortableSSD/HR_WORK/197/.asm_197S/flye/assembly_info.txt
+      (nessuna riga di comando riconoscibile)
+  --- /Volumes/PortableSSD/HR_WORK/197/annot_197S/197S.log
+      (nessuna riga di comando riconoscibile)
+  --- /Volumes/PortableSSD/HR_WORK/197/annot_197S/._197S.log
+      (nessuna riga di comando riconoscibile)
+
+## stringhe di versione
+  Flye 2.9.6
+
+## naming dei contig negli assembly (indizio, non prova)
+   flye -> contig_1 | unicycler -> 1 length=.. | spades -> NODE_1_length_.._cov_..
+   canu -> tig00000001 | raven -> Utg.. | wtdbg2 -> ctg1 | trycycler -> cluster_001
+  assembly.fasta: >contig_1
+  155R.fasta: >contig_1
+  assembly.fasta: >contig_1
+  155S.fasta: >contig_1
+  155S.fna: >contig_1 
+  ._155S.fna: Mac OS X        	2°âATTRâ˜˜com.apple.provenanceé‚®ì˜9-This resource fork intentionally left blank   ÿÿ
+
+## esito
+Se il punto 2 ha stampato una command line, (c) e' chiuso: copiala in pipeline/00_assembly.md.
+Se non ha stampato nulla, (c) resta un buco dichiarato: il naming del punto 4 e' un indizio
+sull'assemblatore, non la sua identificazione, e non va scritto nei Methods come tale.

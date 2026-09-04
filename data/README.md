@@ -9,6 +9,9 @@ Licensed CC-BY-4.0 (see `../LICENSE`).
 | `HR_cohort_mechanism_from_db.csv` | pair -> centre, species, candidate mechanism |
 | `pairs_vcf_availability.csv` | per-pair availability of the joint VCF / intra-pair distance |
 | `pair_reference_arm.csv` | which arm's assembly is each pair's reference (S in 22, R in 11), with the evidence for it |
+| `bam_PG_records.tsv` | `@PG` program records of the surviving BAMs — closes gap (b): minimap2 2.31-r1302 |
+| `assembler_provenance_scan.txt` | assembler-log scan of the working drive — closes gap (c): Flye 2.9.6-b1802, long-read only |
+| `species_db_provenance_scan.txt` | classifier-output scan of the working drive — negative result, gap (d) stays open |
 | `joint_vcf_provenance.csv` | the 17 joint call sets: reference arm, BAMs, bcftools version, mpileup flags, from the VCF headers |
 | `HR_intrapair_chromosomal_distance.csv` | one row per pair, with audit columns |
 | `HR_intrapair_differential_sites.csv` | differential sites: allele fraction, depth, class |

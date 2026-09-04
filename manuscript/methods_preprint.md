@@ -29,21 +29,24 @@ pairs.
 
 All 66 isolates were sequenced with Oxford Nanopore long reads and 35 of them additionally
 with paired-end short reads (both arms of 17 pairs plus one further arm), giving 101 read
-libraries, combined into one hybrid assembly per isolate. Genomes were annotated with Bakta
-v1.12.1 (database v6.0 light) and resistance determinants inventoried with AMRFinderPlus.
-The assembler, its parameters and any polishing stage could not be recovered from the
-surviving working files, nor could the sequencing platform, library chemistry, read
-pre-processing, or the AMRFinderPlus and species-call database releases; these are stated as
-unrecovered rather than reconstructed (see Provenance below).
+libraries. Each isolate was assembled from its long reads alone with Flye 2.9.6
+(`--nano-hq`, nominal genome size 5 Mb) from a subsampled read set; assemblies comprise 1–3
+contigs. Short reads were not used for assembly or polishing — they serve as an independent
+consistency check on the coverage-based dosage estimates below. Genomes were annotated with
+Bakta v1.12.1 (database v6.0 light) and resistance determinants inventoried with
+AMRFinderPlus. The subsampling depth, the sequencing platform and library chemistry, read
+pre-processing, and the AMRFinderPlus and species-call database releases could not be
+recovered from the surviving working files and are stated as unrecovered rather than
+reconstructed (see Provenance below).
 
 ## Gene dosage
 
-Long reads from both arms were mapped onto the pair's reference assembly, and coverage was
-aggregated per gene and in 1-kb windows. Gene dosage is the R/S coverage ratio after
+Long reads from both arms were mapped onto the pair's reference assembly with minimap2 2.31
+(`-ax map-ont`), sorted with samtools 1.24, and coverage was aggregated per gene and in 1-kb
+windows. Gene dosage is the R/S coverage ratio after
 normalisation to the median chromosomal window coverage of the same alignment, making it a
 within-pair, within-alignment quantity; short-read alignments, where available, served as an
-independent consistency check. The mapper and version are recorded only in alignment headers
-held on external storage and are not stated here.
+independent consistency check.
 
 ## Variant calling and intra-pair distance
 
@@ -93,13 +96,16 @@ with the gene-dosage estimates above.
 
 The analysis was reconstructed from surviving intermediate files rather than a
 contemporaneous run log, and the repository separates parameters recovered verbatim from
-file headers (variant-calling command line and caller version, per-pair reference arm) from
-those recovered by re-execution against archived output (the Mash parameters above) and
-those not recovered at all (assembler and polishing, read mapper, database releases,
-sequencing platform and library preparation, and the variant-effect scripts, of which only
-the scoring definition and output table survive). Unrecovered parameters are declared, not
-replaced by plausible defaults, and each is listed with the specific file that would close
-it.
+tool-written headers and logs (assembler, read mapper, variant caller and their versions and
+command lines, per-pair reference arm) from those recovered by re-execution against archived
+output (the Mash parameters above) and those not recovered at all (read subsampling depth,
+sequencing platform and library preparation, AMRFinderPlus and species-call database
+releases, and the variant-effect scripts, of which only the scoring definition and output
+table survive). Where a recovered parameter comes from a subset of the cohort — assembler
+logs survive for 20 of 66 arms, alignment headers for 6 — the repository records the subset
+and treats the remainder as an inference from their uniformity. Unrecovered parameters are
+declared, not replaced by plausible defaults, and each is listed with the specific file that
+would close it.
 
 ## Data availability
 

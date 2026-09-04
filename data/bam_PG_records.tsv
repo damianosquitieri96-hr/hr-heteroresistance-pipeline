@@ -1,0 +1,19 @@
+file	pg_id	pg_pn	pg_vn	pg_cl
+103R.bam	minimap2	minimap2	2.31-r1302	minimap2 -t 5 -I 1G -K 100M -ax map-ont /Volumes/PortableSSD/HR_WORK/103/103S.fasta /Volumes/PortableSSD/HR_WORK/103/103R.fastq.gz
+103R.bam	samtools	samtools	1.24	samtools sort -@ 4 -m 512M -o /Volumes/PortableSSD/HR_RESULTS/103/103R.bam -
+103R.bam	samtools.1	samtools	1.24	samtools view -H /Volumes/PortableSSD/HR_RESULTS/103/103R.bam
+103S.bam	minimap2	minimap2	2.31-r1302	minimap2 -t 5 -I 1G -K 100M -ax map-ont /Volumes/PortableSSD/HR_WORK/103/103S.fasta /Volumes/PortableSSD/HR_WORK/103/103S.fastq.gz
+103S.bam	samtools	samtools	1.24	samtools sort -@ 4 -m 512M -o /Volumes/PortableSSD/HR_RESULTS/103/103S.bam -
+103S.bam	samtools.1	samtools	1.24	samtools view -H /Volumes/PortableSSD/HR_RESULTS/103/103S.bam
+137R.bam	minimap2	minimap2	2.31-r1302	minimap2 -t 5 -I 1G -K 100M -ax map-ont /Volumes/PortableSSD/HR_WORK/137/137S.fasta /Volumes/PortableSSD/HR_WORK/137/137R.fastq.gz
+137R.bam	samtools	samtools	1.24	samtools sort -@ 4 -m 512M -o /Volumes/PortableSSD/HR_RESULTS/137/137R.bam -
+137R.bam	samtools.1	samtools	1.24	samtools view -H /Volumes/PortableSSD/HR_RESULTS/137/137R.bam
+137S.bam	minimap2	minimap2	2.31-r1302	minimap2 -t 5 -I 1G -K 100M -ax map-ont /Volumes/PortableSSD/HR_WORK/137/137S.fasta /Volumes/PortableSSD/HR_WORK/137/137S.fastq.gz
+137S.bam	samtools	samtools	1.24	samtools sort -@ 4 -m 512M -o /Volumes/PortableSSD/HR_RESULTS/137/137S.bam -
+137S.bam	samtools.1	samtools	1.24	samtools view -H /Volumes/PortableSSD/HR_RESULTS/137/137S.bam
+155R.bam	minimap2	minimap2	2.31-r1302	minimap2 -t 6 -I 1G -K 100M -ax map-ont /Volumes/PortableSSD/HR_WORK/155/155S.fasta /Volumes/PortableSSD/HR_WORK/155/155R.fastq.gz
+155R.bam	samtools	samtools	1.24	samtools sort -@ 4 -m 512M -o /Volumes/PortableSSD/HR_RESULTS/155/155R.bam -
+155R.bam	samtools.1	samtools	1.24	samtools view -H /Volumes/PortableSSD/HR_RESULTS/155/155R.bam
+155S.bam	minimap2	minimap2	2.31-r1302	minimap2 -t 6 -I 1G -K 100M -ax map-ont /Volumes/PortableSSD/HR_WORK/155/155S.fasta /Volumes/PortableSSD/HR_WORK/155/155S.fastq.gz
+155S.bam	samtools	samtools	1.24	samtools sort -@ 4 -m 512M -o /Volumes/PortableSSD/HR_RESULTS/155/155S.bam -
+155S.bam	samtools.1	samtools	1.24	samtools view -H /Volumes/PortableSSD/HR_RESULTS/155/155S.bam

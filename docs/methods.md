@@ -6,12 +6,29 @@
 Pairs are pseudonymised as integers. Within each pair, one arm's assembly serves as the
 reference genome for every within-pair comparison (which arm: see below).
 
-## Hybrid assembly
+## Long-read assembly
 
-Short-read and long-read (ONT) data were combined into a hybrid assembly per isolate.
-Assembler, version, parameters and any polishing stage **could not be recovered** from
-the surviving working files (see `docs/PROVENANCE_GAPS.md`, item c). Assembly FASTA
-files carry generic `contig_N` headers, which do not identify the assembler.
+Each isolate was assembled from its ONT long reads alone with Flye 2.9.6-b1802:
+`flye --nano-hq sub.fq.gz --out-dir <asm>/flye --threads 5 --genome-size 5m` (preset config
+`asm_nano_hq.cfg`; `--threads` 5 or 8 depending on the run). The same nominal genome size of
+5 Mb was passed for every isolate irrespective of species; under `--nano-hq` it feeds only
+Flye's internal coverage estimate. Command line recovered from the assembler logs on
+external storage (`data/assembler_provenance_scan.txt`); logs survive for 20 arms of 10
+pairs across four of the five species and are identical among them, so the same procedure
+for the remaining arms is an inference from that uniformity and from the uniform `contig_N`
+naming of all exported assemblies, not a recovered fact.
+
+Assemblies are **not** hybrid: the recovered command line consumes one ONT read file and no
+short reads, 7 of the 10 pairs with surviving logs have short-read libraries that were not
+used at this stage, and no other assembler and no polisher leaves a log or version string on
+the drive. Short reads were used for mapping and dosage cross-checks only. No polishing
+stage is recorded; that is an absence of evidence rather than positive evidence of none.
+The input `sub.fq.gz` is a subsampled read set and the subsampling tool and target depth are
+upstream of Flye, hence not in its log and still unrecovered
+(`docs/PROVENANCE_GAPS.md`, item c2).
+
+## Reference arm within a pair
+
 Each pair has one arm whose assembly serves as the pair's reference for every downstream
 stage — annotation, mapping, gene dosage and joint calling all use the same arm, so the
 whole pair sits in one coordinate frame. That arm is the susceptible one in 22 pairs and
@@ -38,9 +55,14 @@ Per-gene coverage (`<pair>{R,S}.long_on_<pair><ref>.genecov.tsv`) and 1-kb windo
 processed identically (`...short_on_...`) and used as a consistency check.
 Gene dosage is expressed as the R/S coverage ratio after normalisation to the
 median chromosomal window coverage of the same alignment
-(`data/HR_betalactam_dosage_ONT_15pairs.csv`). The mapper and its version are recorded
-in the `@PG` line of the BAM headers, which reside on external storage and were not
-available when this repository was assembled (`docs/PROVENANCE_GAPS.md`, item b).
+(`data/HR_betalactam_dosage_ONT_15pairs.csv`). Long reads were mapped with minimap2
+2.31-r1302 (`minimap2 -t 5 -I 1G -K 100M -ax map-ont <ref>.fasta <reads>.fastq.gz`) and
+alignments sorted and indexed with samtools 1.24 (`sort -@ 4 -m 512M`); `--threads` was 5
+or 6 depending on the run and no other parameter varied. Recovered from the `@PG` records
+of the BAM headers (`data/bam_PG_records.tsv`), which survive for 6 alignments of 3 pairs —
+the only BAMs still on the drive — and agree in mapper, version and parameters; the
+reference file named in each recovered command line is that pair's reference arm as listed
+in `data/pair_reference_arm.csv`, in 3/3 cases.
 
 ## Joint two-sample variant calling
 
@@ -217,7 +239,7 @@ above; see `pipeline/07_pap_correlation/`.
 ## Code availability
 
 All analysis code, together with the exact command lines, tool versions and thresholds
-used at every stage — hybrid assembly, annotation, long-read mapping and gene-dosage
+used at every stage — long-read assembly, annotation, long-read mapping and gene-dosage
 estimation, joint two-sample variant calling, intra-pair chromosomal distance, k-mer
 sketch clonality analysis, predicted variant effect and PAP correlation — is available at
 `https://github.com/damianosquitieri96-hr/hr-heteroresistance-pipeline` (release v1.0.1, archived at
