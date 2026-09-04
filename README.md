@@ -19,9 +19,13 @@ Pairs are identified by number only (40, 70, 72, 76, ...). Two centres contribut
 pairs; centre, species and candidate mechanism per pair are in
 `data/HR_cohort_mechanism_from_db.csv`.
 
-All within-pair comparisons are **referenced to the susceptible arm of the same pair**:
-the S assembly is the reference for mapping, for gene-dosage estimation and for joint
-variant calling. No inter-patient comparison is made anywhere in the pipeline.
+All within-pair comparisons are **referenced to one arm of the same pair**: that arm's
+assembly is the reference for annotation, mapping, gene-dosage estimation and joint variant
+calling alike, so each pair sits in a single coordinate frame. The reference arm is the
+susceptible one in 22 pairs and the resistant one in 11 (`data/pair_reference_arm.csv`);
+consequently the coordinates and the `af_R`/`af_S` polarity in
+`data/HR_intrapair_differential_sites.csv` are per-pair and not comparable across pairs.
+No inter-patient comparison is made anywhere in the pipeline.
 
 ## How to read this repository
 

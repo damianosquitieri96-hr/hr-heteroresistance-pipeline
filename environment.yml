@@ -7,7 +7,7 @@ dependencies:
   - bcftools=1.24         # stage 03 (htslib 1.24)
   - samtools=1.24         # stages 02-03
   - bedtools              # stage 02
-  - mash                  # stage 04 (k / sketch size not recoverable)
+  - mash=2.3              # stage 04 (k=21, sketch size 200000; recovered 2026-09-04)
   - pysam                 # stage 05
   - pandas
   - numpy

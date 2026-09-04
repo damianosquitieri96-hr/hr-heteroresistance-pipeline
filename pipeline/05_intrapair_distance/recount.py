@@ -4,12 +4,23 @@ Rationale (spec163 methodological re-check): counts obtained by assembly-vs-asse
 BLASTN over sliding windows inflate the distance in a non-constant way, because
 paralogue misalignment inside repeat families contributes mismatches that move when
 the window boundaries move. The exports already contain read-based joint calls
-(bcftools, samples R and S) against the pair's OWN susceptible-arm assembly, which is
-the reference choice recommended in Gorrie et al. Lancet Microbe 2021;2:e575-83, so
-the distance is recomputed from those instead of re-running an assembly comparison.
+(bcftools, samples R and S) against ONE ARM's own assembly from the same pair, which is
+the within-pair reference choice recommended in Gorrie et al. Lancet Microbe
+2021;2:e575-83, so the distance is recomputed from those instead of re-running an
+assembly comparison.
 
 Rules applied, one per point of the proposal:
- 1. reference = the pair's own S-arm assembly (already true of every VCF here).
+ 1. reference = an assembly of the same pair. It is the S arm in 8 of the 17 pairs with
+    a joint call set and the R arm in the other 9 (data/pair_reference_arm.csv, read
+    from the VCF ##reference headers). Nothing below depends on which: samples are
+    located by their R/S suffix in the VCF header, and classify() is symmetric in the
+    two alt fractions, so a difference is detected with either arm as reference.
+    CAVEAT for readers of the output: af_R and af_S are alt fractions relative to THAT
+    PAIR'S reference arm, so their polarity flips between pairs. At a fixed difference,
+    an S-reference pair shows af_R ~ 0.99 / af_S ~ 0.00 and an R-reference pair shows
+    af_R ~ 0.00 / af_S ~ 1.00. Filtering the differential-sites table on af_R >= 0.9 to
+    get "variants carried by the resistant arm" would therefore silently drop every
+    R-reference pair; use cls together with the reference arm instead.
  2. no prophage and no recombination masking; declared, not applied.
  3. chromosome only: the largest reference contig (any further contig >= 1 Mb is
     reported separately, never silently pooled). Plasmid contigs are excluded.

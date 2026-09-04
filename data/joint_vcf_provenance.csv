@@ -1,0 +1,18 @@
+pair,reference,ref_arm,bams,bcftools,mpileup_flags
+40,40S.fasta,S,"40R.bam,40S.bam",1.24+htslib-1.24,-q 20 -Q 20 -a AD -f
+80,80S.fasta,S,"80R.bam,80S.bam",1.24+htslib-1.24,-q 20 -Q 20 -a AD -f
+202,202S.fasta,S,"202R.bam,202S.bam",1.24+htslib-1.24,-q 20 -Q 20 -a AD -f
+212,212R.fasta,R,"212R.bam,212S.bam",1.24+htslib-1.24,-q 20 -Q 20 -a AD -f
+216,216S.fasta,S,"216R.bam,216S.bam",1.24+htslib-1.24,-q 20 -Q 20 -a AD -f
+222,222S.fasta,S,"222R.bam,222S.bam",1.24+htslib-1.24,-q 20 -Q 20 -a AD -f
+226,226R.fasta,R,"226R.bam,226S.bam",1.24+htslib-1.24,-q 20 -Q 20 -a AD -f
+236,236R.fasta,R,"236R.bam,236S.bam",1.24+htslib-1.24,-q 20 -Q 20 -a AD -f
+240,240R.fasta,R,"240R.bam,240S.bam",1.24+htslib-1.24,-q 20 -Q 20 -a AD -f
+246,246S.fasta,S,"246R.bam,246S.bam",1.24+htslib-1.24,-q 20 -Q 20 -a AD -f
+254,254R.fasta,R,"254R.bam,254S.bam",1.24+htslib-1.24,-q 20 -Q 20 -a AD -f
+260,260S.fasta,S,"260R.bam,260S.bam",1.24+htslib-1.24,-q 20 -Q 20 -a AD -f
+265,265R.fasta,R,"265R.bam,265S.bam",1.24+htslib-1.24,-q 20 -Q 20 -a AD -f
+275,275R.fasta,R,"275R.bam,275S.bam",1.24+htslib-1.24,-q 20 -Q 20 -a AD -f
+279,279R.fasta,R,"279R.bam,279S.bam",1.24+htslib-1.24,-q 20 -Q 20 -a AD -f
+283,283R.fasta,R,"283R.bam,283S.bam",1.24+htslib-1.24,-q 20 -Q 20 -a AD -f
+298,298S.fasta,S,"298R.bam,298S.bam",1.24+htslib-1.24,-q 20 -Q 20 -a AD -f

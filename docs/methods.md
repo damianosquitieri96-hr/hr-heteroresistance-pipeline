@@ -3,8 +3,8 @@
 ## Isolates and design
 
 33 clonal R/S isolate pairs from bloodstream infection episodes, two centres.
-Pairs are pseudonymised as integers. Within each pair the susceptible arm serves as the
-reference genome for every within-pair comparison.
+Pairs are pseudonymised as integers. Within each pair, one arm's assembly serves as the
+reference genome for every within-pair comparison (which arm: see below).
 
 ## Hybrid assembly
 
@@ -12,20 +12,28 @@ Short-read and long-read (ONT) data were combined into a hybrid assembly per iso
 Assembler, version, parameters and any polishing stage **could not be recovered** from
 the surviving working files (see `docs/PROVENANCE_GAPS.md`, item c). Assembly FASTA
 files carry generic `contig_N` headers, which do not identify the assembler.
-Per-pair assemblies used as references are the files `<pair>S.fasta`.
+Each pair has one arm whose assembly serves as the pair's reference for every downstream
+stage — annotation, mapping, gene dosage and joint calling all use the same arm, so the
+whole pair sits in one coordinate frame. That arm is the susceptible one in 22 pairs and
+the resistant one in 11 (76, 87, 212, 226, 236, 240, 254, 265, 275, 279, 283); the full
+table is `data/pair_reference_arm.csv`. It was recovered from the `_on_<pair><arm>`
+infix of the coverage filenames and, for the 17 pairs with a joint call set, corroborated
+by the `##reference` header of the VCF, which agreed in 17/17. The reference arm is a
+property of how each pair was processed, not a study-design variable.
 
 ## Annotation
 
 Bakta v1.12.1 with database v6.0 (light) (Schwengers et al., doi:10.1099/mgen.0.000685).
-Command: `pipeline/01_annotation.sh`. Outputs used downstream: `<pair>S.bakta.tsv`
-(gene table) and `<pair>S.genes.bed` (gene intervals for coverage aggregation).
-AMR determinants were called with AMRFinderPlus (`<pair>S.amrfinder.tsv`); the version
+Command: `pipeline/01_annotation.sh`. Outputs used downstream: `<pair><ref>.bakta.tsv`
+(gene table) and `<pair><ref>.genes.bed` (gene intervals for coverage aggregation).
+AMR determinants were called with AMRFinderPlus (`<pair><ref>.amrfinder.tsv`); the version
 string is not recoverable from the exports.
 
 ## Long-read mapping and gene dosage
 
-Long reads from both arms of a pair were mapped onto the **S assembly of the same pair**.
-Per-gene coverage (`<pair>{R,S}.long_on_<pair>S.genecov.tsv`) and 1-kb window coverage
+Long reads from both arms of a pair were mapped onto the **reference arm's assembly of the
+same pair** (`data/pair_reference_arm.csv`), so dosage ratios are within-pair throughout.
+Per-gene coverage (`<pair>{R,S}.long_on_<pair><ref>.genecov.tsv`) and 1-kb window coverage
 (`...win1kb.tsv.gz`) were computed on those alignments; short-read alignments were
 processed identically (`...short_on_...`) and used as a consistency check.
 Gene dosage is expressed as the R/S coverage ratio after normalisation to the
@@ -37,21 +45,29 @@ available when this repository was assembled (`docs/PROVENANCE_GAPS.md`, item b)
 ## Joint two-sample variant calling
 
 bcftools 1.24 with htslib 1.24, run as a single two-sample pileup of the R and S
-alignments against the S assembly of the same pair:
+alignments against the assembly of **one arm** of the same pair:
 
 ```
-bcftools mpileup -q 20 -Q 20 -a AD -f <pair>S.fasta <pair>R.bam <pair>S.bam | bcftools call -mv -Ou | bcftools norm -f <pair>S.fasta -Oz -o <pair>.RS.vcf.gz
+bcftools mpileup -q 20 -Q 20 -a AD -f <pair><ref>.fasta <pair>R.bam <pair>S.bam | bcftools call -mv -Ou | bcftools norm -f <pair><ref>.fasta -Oz -o <pair>.RS.vcf.gz
 ```
 
 Recovered verbatim from the `##bcftoolsCommand`, `##bcftools_callCommand` and
 `##bcftools_normCommand` header lines of the exported VCFs. `-a AD` retains allelic
 depths, which the downstream distance recount uses for allele-fraction filtering.
 
-## Intra-pair chromosomal distance
+`<ref>` is **not the same arm in every pair**: the `##reference` header lines give the
+susceptible arm for 8 pairs (40, 80, 202, 216, 222, 246, 260, 298) and the resistant arm
+for 9 (212, 226, 236, 240, 254, 265, 275, 279, 283). The reference arm of each pair is
+tabulated in `data/joint_vcf_provenance.csv`, read from the VCF headers. Two consequences
+are load-bearing for reading the outputs: the coordinates in
+`data/HR_intrapair_differential_sites.csv` are relative to that pair's own reference arm
+and are not comparable across pairs, and the callable fraction of each genome is defined by
+the arm that happens to be the reference. The recount is symmetric in the two samples and
+does not assume which arm is the reference; nothing in it required the susceptible arm.
 
-# Intra-pair chromosomal distance — recomputed from read-based joint calls
+## Intra-pair chromosomal distance — recomputed from read-based joint calls
 
-## What changed and why
+### What changed and why
 
 Intra-pair distances previously obtained by assembly-versus-assembly comparison over
 sliding windows are not used. In that approach mismatches contributed by paralogue
@@ -60,17 +76,22 @@ overestimate is not constant across pairs and cannot be corrected by a scaling f
 The distance is therefore taken from read evidence.
 
 No new caller was installed: the exports already contain, for 17 of the 33 pairs, a
-joint two-sample call set (bcftools, samples R and S) made against the pair's **own
-susceptible-arm assembly**, which is the reference choice the recount requires.
+joint two-sample call set (bcftools, samples R and S) made against **one arm's own
+assembly from the same pair** — the susceptible arm in 8 pairs, the resistant arm in 9
+(`data/joint_vcf_provenance.csv`). Either choice satisfies the recount, which needs a
+within-pair reference so that the two arms are compared on the same coordinate frame; it
+does not need a particular arm.
 
-## Procedure
+### Procedure
 
-Input: `<pair>.RS.vcf.gz` (samples R, S; reference `<pair>S.fasta`) and
-`<pair>S.contigs.tsv`. Script: `recount.py`.
+Input: `<pair>.RS.vcf.gz` (samples R, S; reference `<pair><ref>.fasta`, the arm recorded in
+`data/joint_vcf_provenance.csv`) and `<pair><ref>.contigs.tsv`. Script: `recount.py`.
 
-1. **Reference.** The susceptible arm of the same pair. Coordinates and REF alleles are
-   on that assembly; a difference is reported when the two arms disagree, irrespective
-   of which arm carries the non-reference allele.
+1. **Reference.** The reference arm of the same pair (`data/pair_reference_arm.csv`).
+   Coordinates and REF alleles are on that assembly; a difference is reported when the
+   two arms disagree, irrespective of which arm carries the non-reference allele, so the
+   procedure is symmetric and does not depend on which arm is the reference. Note that
+   `af_R` and `af_S` in the output are therefore polarised by that pair's reference arm.
 2. **No masking.** Neither prophage regions (PhiSpy) nor recombination (Gubbins) are
    masked. Recombination inference requires a phylogeny, which two isolates of one
    isogenic pair cannot provide; prophage masking would remove real sites without an
