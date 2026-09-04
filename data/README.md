@@ -12,7 +12,9 @@ Licensed CC-BY-4.0 (see `../LICENSE`).
 | `HR_intrapair_differential_sites.csv` | differential sites: allele fraction, depth, class |
 | `table2_snv.csv` | Table 2 of the manuscript (variants per pair) |
 | `HR_betalactam_dosage_ONT_15pairs.csv` | gene dosage, R/S coverage ratios |
-| `HR_clonality_distance_matrix_66genomes.csv` | mash sketch distances, 66 genomes |
+| `HR_clonality_distance_matrix_66genomes.csv` | mash sketch distances, 66 genomes (k=21, sketch 200 000) |
+| `mash_k_recovery_grid.csv` | k / sketch-size grid vs the archived matrix; identifies the parameters above |
+| `ENA_sample_inventory.csv` | 66 read-set anagraphics with the source of every ENA field |
 | `HR_intraclone_matrices_x1e6.csv` | intra-clone submatrices (values x1e6) |
 | `vep_missense.csv` | missense variants: ESM-2 LLR, RSA, pLDDT, catalytic-site distance |
 | `spec163_SNP_method_comparison.csv` | pair 163: superseded windowed method vs joint calling |

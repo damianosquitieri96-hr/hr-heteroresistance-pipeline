@@ -32,13 +32,17 @@ variant calling. No inter-patient comparison is made anywhere in the pipeline.
 | `pipeline/00_assembly.md` .. `08_figures/` | one file per stage; `.sh`/`.py` if scripted, `.md` if run by hand |
 | `data/` | derived tables only — one row per pair or per variant, no patient-level data |
 | `results/` | final figures |
+| `submission/ena/` | pre-filled ENA/Webin metadata for the 101 read libraries, not yet submitted |
 
 ## Data availability
 
 Raw reads and assemblies are **not** in this repository, and are **not yet deposited**:
 they will be submitted to ENA prior to publication, and the BioProject accession will be
 added to this section and to `docs/methods.md` at that point. Until then no accession
-should be cited for this study.
+should be cited for this study. The metadata for that submission — 66 samples,
+101 experiments and 101 runs against checklist ERC000028 — is pre-filled in
+`submission/ena/`, with every value's basis and every field still to be completed listed
+in `submission/ena/README.md`.
 `data/` contains only derived tables (CC-BY-4.0); code is MIT.
 
 ## Coverage of the cohort

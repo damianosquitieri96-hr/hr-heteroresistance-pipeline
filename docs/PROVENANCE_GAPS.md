@@ -4,13 +4,29 @@ Parameters of the pipeline as run that could **not** be recovered from the survi
 files. They are listed here rather than reconstructed, and the Methods text points to
 this file at each affected stage.
 
-**a. Mash sketch parameters (k, sketch size).** The intermediate `mash_dist.tsv` no
-longer exists; the 66-genome distance matrix survives without its command line.
-Consequence: clonality is reported as sketch distance only, never as SNP counts and
-never against published clonality thresholds. Recoverable by re-running
-`mash sketch` + `mash dist` on the 66 assemblies and checking that the distances
-reproduce `data/HR_clonality_distance_matrix_66genomes.csv`; the k that reproduces it
-is then the k that was used.
+**a. Mash sketch parameters (k, sketch size).** — **CLOSED 2026-09-04.** The intermediate
+`mash_dist.tsv` is still missing, but the parameters were identified by re-running
+`mash sketch` + `mash dist` over a grid of 11 k (13–31) × 7 sketch sizes (1 000–200 000)
+and comparing each result with the surviving matrix. **k = 21, sketch size 200 000**
+(Mash v2.3, default seed) is the only combination that reproduces
+`data/HR_clonality_distance_matrix_66genomes.csv`: 490 of the 496 testable distances are
+identical to the 6 significant digits at which the matrix was stored, and the 6 remaining
+residuals are ≤ 4.9e-9, all on intra-clone distances near 1e-4 — rounding at the last
+stored digit. No other combination yields a single exact distance.
+`pipeline/04_clonality_mash.sh` now carries the flags instead of placeholders. Grid:
+`data/mash_k_recovery_grid.csv`; figure: `results/mash_k_recovery.png`.
+
+Caveat, stated because it is part of the evidence: the test used the 32 of 66 assemblies
+present on local storage (496 of 2 145 distances). `mash dist` is pairwise and a sketch
+does not depend on which other genomes are sketched with it, so this does not weaken the
+identification, but the remaining 1 649 distances have not been checked against the
+recovered parameters. Re-run the stage on all 66 assemblies when the external drive is
+mounted to close that too.
+
+Clonality remains reported as sketch distance only — never as SNP counts and never against
+published clonality thresholds. That choice was never a consequence of the missing
+parameters; it follows from the thresholds addressing inter-patient transmission rather
+than two isolates from one episode.
 
 **b. Long-read mapper and version.** Recorded in the `@PG` line of the BAM headers on
 external storage (`/Volumes/PortableSSD/HR_RESULTS/`), which was not mounted when this

@@ -147,11 +147,28 @@ Mash sketches of all 66 genomes (both arms of all pairs) were compared pairwise 
 are in `data/HR_intraclone_matrices_x1e6.csv`, and Figure 3 (dendrograms plus intra-clone
 heat maps) is produced by `pipeline/08_figures/hr_clonality_fig.py`.
 
-**The sketch parameters (k, sketch size) are not recoverable** (see
-`docs/PROVENANCE_GAPS.md`, item a). Accordingly, these values are reported as
-*sketch distances only*. They are not converted into SNP counts and are not compared
-with published clonality thresholds: those thresholds address inter-patient
-transmission, not two isolates from the same episode.
+The sketch parameters were **recovered by re-running the stage against its own output**
+rather than from a surviving command line: `mash sketch -k 21 -s 200000` (Mash v2.3,
+default seed), followed by `mash dist`. `mash sketch` and `mash dist` were re-run over a
+grid of 11 k-mer lengths (13–31) × 7 sketch sizes (1 000–200 000), and each resulting
+matrix was compared with the archived one. Only k = 21 with a sketch size of 200 000
+reproduces it: 490 of the 496 pairwise distances available for the test are identical to
+the 6 significant digits at which the matrix was stored, and the 6 remaining residuals are
+≤ 4.9e-9 and all fall on intra-clone distances near 1e-4, i.e. they are rounding at the
+last stored digit. No other combination in the grid produces a single exact distance; the
+next-best median residual, at k = 21 and sketch size 100 000, is 4.7e-4, which is the size
+of the sampling noise expected between two independent 100 000-hash sketches. The grid is
+in `data/mash_k_recovery_grid.csv` and the comparison in `results/mash_k_recovery.png`.
+
+The test used the 32 of 66 assemblies available on local storage — 496 of the 2 145
+pairwise distances — because the remaining assemblies are on external storage. This is not
+a limitation of the identification: `mash dist` is pairwise and a sketch does not depend on
+which other genomes are sketched alongside it, so a combination that reproduces 496
+distances exactly reproduces the matrix.
+
+Sketch distances are nonetheless still reported as *sketch distances only*. They are not
+converted into SNP counts and are not compared with published clonality thresholds: those
+thresholds address inter-patient transmission, not two isolates from the same episode.
 
 Figure 3 was deliberately **not** recomputed with the corrected distance method: it rests
 on sketch distances, which do not pass through a windowed assembly-versus-assembly
