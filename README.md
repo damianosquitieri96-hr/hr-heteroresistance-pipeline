@@ -1,6 +1,6 @@
 # Beta-lactam heteroresistance in bloodstream infections — analysis pipeline
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22288189.svg)](https://doi.org/10.5281/zenodo.22288189)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22288188.svg)](https://doi.org/10.5281/zenodo.22288188)
 
 Analysis code, exact command lines, tool versions and thresholds for the two-centre
 study of beta-lactam heteroresistance in clonal resistant/susceptible (R/S) isolate
@@ -69,4 +69,4 @@ tables: `data/snv_refinement/`.
 
 ## Citation
 
-See `CITATION.cff`. Release v1.0.1 is archived at Zenodo: DOI [10.5281/zenodo.22288189](https://doi.org/10.5281/zenodo.22288189).
+See `CITATION.cff`. Releases are archived at Zenodo under the concept DOI [10.5281/zenodo.22288188](https://doi.org/10.5281/zenodo.22288188), which always resolves to the latest version; each version also has its own DOI, listed on the Zenodo record.
