@@ -1,0 +1,6 @@
+pair	orig_contig	orig_pos	ref	alt	gene	aa	prev_afR	prev_afS	new_contig	new_pos	polished_ref_base	lift_status
+80	contig_1	2995285	T	G	ampR	D135A	0.998	0.0	contig_1	2995801	T	left_flank
+80	contig_1	289787	C	T	wzxC	L397L	0.132	0.391	contig_1	289839	C	left_flank
+80	contig_1	1878537	T	C	D-Ala carboxypeptidase	Q181R	0.338	0.009	contig_1	1878850	T	left_flank
+80	contig_1	2206803	A	G	histidine kinase	L28P	0.135	0.475	contig_1	2207177	A	left_flank
+80	contig_1	3778026	C	T	PBP1a	Q435Q	0.044	0.33	contig_1	3778697	C	left_flank

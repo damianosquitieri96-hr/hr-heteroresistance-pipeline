@@ -1,0 +1,32 @@
+pair;species;classe;disp;product;contig;pos;ref;alt;effect;aa;aa_len;tyoe;allele_alt_in;direction;afR;afS;dpR;dpS;dAF;bio interpretation
+40;;AmpC circuit;ampR;LysR family transcriptional regulator AmpR;contig_1;2637510;C;T;missenso;S191F;297;subclonale;S;variante in S;0.31;0.562;100;64;0.252;
+40;K. aerogenes;AmpC circuit;ampD;1,6-anhydro-N-acetylmuramyl-L-alanine amidase AmpD;contig_1;2810478;C;T;nonsenso;W95*;188;fixed;R;R variant;0.991;0.0;455;403;0.991;si
+40;;efflux / its regulator;efflux transporter;Efflux pump membrane transporter;contig_1;50575;C;T;sinonima;Q210Q;1038;subclonale;S;variante in S;0.01;0.318;414;88;0.309;
+40;;envelope / LPS;porin;Porin;contig_1;4717084;T;C;missenso;L54P;452;subclonale;S;variante in S;0.218;0.778;55;18;0.56;
+40;;other;mdtA;Multidrug resistance protein MdtA;contig_1;355031;G;A;missenso;L229F;415;subclonale;R;variante in R;0.35;0.022;60;272;0.328;no
+40;;other;anti-sigma factor;Anti-sigma factor;contig_1;2150068;A;G;sinonima;L168L;265;subclonale;R;variante in R;0.429;0.004;70;255;0.425;no
+40;;other;lysR;DNA-binding transcriptional LysR family regulator;contig_1;2410695;C;T;missenso;S34F;304;subclonale;S;variante in S;0.006;0.465;358;43;0.46;
+40;;other;lysR;DNA-binding transcriptional LysR family regulator;contig_1;2410696;T;C;sinonima;S34S;304;subclonale;S;variante in S;0.006;0.396;356;48;0.39;
+40;;other;ftsI;Peptidoglycan D,D-transpeptidase FtsI;contig_1;2837434;A;G;missenso;L248P;589;subclonale;R;variante in R;0.309;0.006;94;327;0.302;no
+40;;other;PBP activator;Penicillin-binding protein activator;contig_1;4345857;G;T;missenso;N236K;714;subclonale;R;variante in R;0.333;0.005;93;207;0.329;no
+40;;other;lytic transglycosylase;peptidoglycan lytic exotransglycosylase;contig_1;4543552;C;T;missenso;A305T;362;subclonale;R;variante in R;0.733;0.444;15;18;0.289;no
+80;E. cloacae;AmpC circuit;ampR;LysR family transcriptional regulator AmpR;contig_1;2995285;T;G;missenso;D135A;292;fixed;R;R variant;0.998;0.0;401;363;0.998;si
+80;;envelope / LPS;wzxC;colanic acid undecaprenyl disphosphate flippase WzxC;contig_1;289787;C;T;sinonima;L397L;493;subclonale;S;variante in S;0.132;0.391;227;92;0.259;
+80;;other;D-Ala carboxypeptidase;serine-type D-Ala-D-Ala carboxypeptidase;contig_1;1878537;T;C;missenso;Q181R;402;subclonale;R;variante in R;0.338;0.009;71;219;0.329;no
+80;;other;histidine kinase;histidine kinase;contig_1;2206803;A;G;missenso;L28P;1183;subclonale;S;variante in S;0.135;0.475;163;61;0.34;
+80;;other;PBP1a;Penicillin-binding protein 1A;contig_1;3778026;C;T;sinonima;Q435Q;851;subclonale;S;variante in S;0.044;0.33;360;100;0.286;
+202;E. cloacae;AmpC circuit;ampD;1,6-anhydro-N-acetylmuramyl-L-alanine amidase AmpD;contig_1;1485070;C;T;missenso;A97V;184;fixed;R;R variant;0.974;0.0;423;333;0.974;si
+216;P. aeruginosa;AmpC circuit;dacB (PBP4);D-alanyl-D-alanine carboxypeptidase/D-alanyl-D-alanine-endopeptidase;contig_3;1109500;G;A;missenso;M1I;477;fixed;R;R variant;1.0;0.0;140;154;1.0;si
+216;P. aeruginosa;efflux / its regulator;RND efflux MFP;RND efflux pump membrane fusion protein barrel-sandwich domain-containing protein;contig_3;888890;A;G;missenso;Q171R;355;subclonal;R;R variant;0.529;0.077;17;39;0.452;si
+216;P. aeruginosa;efflux / its regulator;RND efflux MFP;RND efflux pump membrane fusion protein barrel-sandwich domain-containing protein;contig_3;888891;G;T;missenso;Q171H;355;subclonal;R;R variant;0.5;0.071;20;42;0.429;si
+216;;efflux / its regulator;opmD;multidrug efflux transporter outer membrane subunit OpmD;contig_3;2511381;C;T;missenso;P470L;488;subclonale;S;variante in S;0.375;0.75;16;20;0.375;
+216;;envelope / LPS;ompA;OmpA family protein;contig_3;4295164;A;G;missenso;L298P;1089;subclonale;S;variante in S;0.121;0.389;33;36;0.268;
+216;;other;ladS;hybrid sensor histidine kinase/response regulator LadS;contig_3;2169486;A;G;missenso;L650P;796;subclonale;S;variante in S;0.211;0.481;19;27;0.271;
+216;;other;gacS;two-component system sensor histidine kinase GacS;contig_3;5171405;T;C;missenso;Q840R;926;subclonale;R;variante in R;0.409;0.055;22;55;0.355;no
+226;;envelope / LPS;wecA;Undecaprenyl-phosphate alpha-N-acetylglucosaminyl 1-phosphate transferase;contig_1;78733;A;C;missenso;L92R;368;fisso;S;da stabilire (rif = R);0.016;1.0;310;525;0.984;
+236;;AmpC circuit;ampR;LysR family transcriptional regulator AmpR;contig_3;75233;G;C;missenso;H135D;303;fisso;S;da stabilire (rif = R);0.0;0.986;216;147;0.986;
+240;;AmpC circuit;ampD;1,6-anhydro-N-acetylmuramyl-L-alanine amidase AmpD;contig_1;3995216;A;G;missenso;H93R;184;fisso;S;da stabilire (rif = R);0.02;0.993;343;292;0.973;
+246;P. aeruginosa;AmpC circuit;dacB (PBP4);D-alanyl-D-alanine carboxypeptidase/D-alanyl-D-alanine-endopeptidase;contig_1;5789063;C;A;missenso;N312K;477;subclonal;R;R variant;0.601;0.0;223;206;0.601;si
+254;;other;blaCTX-M-178;inhibitor-resistant class A beta-lactamase CTX-M-178;contig_1;2077033;A;G;missenso;S239G;292;fisso;S;da stabilire (rif = R);0.0;1.0;334;359;1.0;
+275;;other;rpoB;DNA-directed RNA polymerase subunit beta;contig_2;142228;G;T;missenso;P952Q;1343;fisso;S;da stabilire (rif = R);0.0;0.997;399;291;0.997;
+279;;efflux / its regulator;mexR;Multidrug resistance operon repressor;contig_1;2965488;T;G;perdita stop;*127E;127;fisso;S;da stabilire (rif = R);0.0;1.0;325;461;1.0;

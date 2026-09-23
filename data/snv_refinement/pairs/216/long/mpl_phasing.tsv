@@ -1,0 +1,23 @@
+# ../results/216/216R.short.bam
+# reads spanning all sites (MAPQ>=20): 127
+site contig_3:2214338:TGGGGGGG:TGGGGGG: long-read AF 63/126 = 0.500 (0.414-0.586); other=1
+site contig_3:2214365:C:T: long-read AF 64/126 = 0.508 (0.422-0.594); other=1
+haplotype	contig_3:2214338:TGGGGGGG:TGGGGGG	contig_3:2214365:C:T	reads
+	ref	alt	63
+	alt	ref	62
+	alt	other	1
+	other	alt	1
+
+# ../results/216/long/216R.long.bam
+# reads spanning all sites (MAPQ>=20): 234
+site contig_3:2214338:TGGGGGGG:TGGGGGG: long-read AF 57/117 = 0.487 (0.398-0.577); other=117
+site contig_3:2214365:C:T: long-read AF 126/228 = 0.553 (0.488-0.616); other=6
+haplotype	contig_3:2214338:TGGGGGGG:TGGGGGG	contig_3:2214365:C:T	reads
+	ref	ref	6
+	ref	alt	53
+	ref	other	1
+	alt	ref	40
+	alt	alt	17
+	other	ref	56
+	other	alt	56
+	other	other	5

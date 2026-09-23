@@ -1,0 +1,2 @@
+pair	orig_contig	orig_pos	ref	alt	gene	aa	prev_afR	prev_afS	new_contig	new_pos	polished_ref_base	lift_status
+275	contig_2	142228	G	T	rpoB	P952Q	0.0	0.997	contig_2	142234	G	left_flank

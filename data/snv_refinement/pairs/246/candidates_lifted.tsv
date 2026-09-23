@@ -1,0 +1,2 @@
+pair	orig_contig	orig_pos	ref	alt	gene	aa	prev_afR	prev_afS	new_contig	new_pos	polished_ref_base	lift_status
+246	contig_1	5789063	C	A	dacB (PBP4)	N312K	0.601	0.0	contig_1	5789523	C	left_flank

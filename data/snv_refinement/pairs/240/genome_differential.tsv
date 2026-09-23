@@ -1,0 +1,6 @@
+contig	pos	ref	alt	dp_R	alt_R	af_R	lo_R	hi_R	altF_R	altR_R	dp_S	alt_S	af_S	lo_S	hi_S	altF_S	altR_S	fisher_p	dAF	class
+contig_1	2388388	T	A	172	92	0.5349	0.4604	0.6078	57	35	205	0	0.0000	0.0000	0.0184	0	0	5.24e-40	0.5349	subclonal
+contig_1	3370604	A	G	216	0	0.0000	0.0000	0.0175	0	0	179	15	0.0838	0.0514	0.1336	11	4	5e-06	-0.0838	subclonal_suggestive
+contig_1	3652835	C	T	216	110	0.5093	0.4430	0.5752	54	56	207	1	0.0048	0.0009	0.0269	1	0	5.62e-39	0.5044	subclonal
+contig_1	3995615	A	G	243	0	0.0000	0.0000	0.0156	0	0	206	205	0.9951	0.9730	0.9991	96	109	2.05e-131	-0.9951	fixed
+contig_1	4738272	C	T	213	0	0.0000	0.0000	0.0177	0	0	198	53	0.2677	0.2109	0.3333	33	20	2.4e-19	-0.2677	subclonal

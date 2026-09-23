@@ -1,0 +1,13 @@
+# ../results/246/long/246R.long.bam
+# reads spanning all sites (MAPQ>=20): 418
+site contig_1:5789111:C:T: long-read AF 67/411 = 0.163 (0.130-0.202); other=7
+site contig_1:5789523:C:A: long-read AF 225/360 = 0.625 (0.574-0.673); other=58
+haplotype	contig_1:5789111:C:T	contig_1:5789523:C:A	reads
+	ref	ref	66
+	ref	alt	221
+	ref	other	57
+	alt	ref	66
+	alt	alt	1
+	other	ref	3
+	other	alt	3
+	other	other	1

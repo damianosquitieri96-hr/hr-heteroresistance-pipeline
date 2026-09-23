@@ -1,0 +1,21 @@
+pair	gene	aa	orig_pos	ref	alt	prev_afR	prev_afS	dp_R	af_R	lo_R	hi_R	dp_S	af_S	lo_S	hi_S	fisher_p	freebayes	verdict
+80	ampR	D135A	2995285	T	G	0.998	0.0	228.0	0.9956	0.9756	0.9992	221.0	0.0	0.0	0.0171	4.29e-132	si	confermato
+80	wzxC	L397L	289787	C	T	0.132	0.391	180.0	0.0056	0.001	0.0308	193.0	0.0	0.0	0.0195	0.483	no	non confermato
+80	D-Ala carboxypeptidase	Q181R	1878537	T	C	0.338	0.009	188.0	0.0	0.0	0.02	183.0	0.0	0.0	0.0206	1.0	no	non confermato
+80	histidine kinase	L28P	2206803	A	G	0.135	0.475	208.0	0.0	0.0	0.0181	226.0	0.0	0.0	0.0167	1.0	no	non confermato
+80	PBP1a	Q435Q	3778026	C	T	0.044	0.33	188.0	0.0	0.0	0.02	179.0	0.0	0.0	0.021	1.0	no	non confermato
+202	ampD	A97V	1485070	C	T	0.974	0.0	244.0	0.9959	0.9772	0.9993	200.0	0.0	0.0	0.0188	1.0300000000000002e-129	si	confermato
+216	dacB (PBP4)	M1I	1109500	G	A	1.0	0.0	125.0	0.992	0.9561	0.9986	153.0	0.0	0.0	0.0245	2.71e-80	si	confermato
+216	RND efflux MFP	Q171R	888890	A	G	0.529	0.077	111.0	0.0	0.0	0.0335	101.0	0.0	0.0	0.0366	1.0	no	non confermato
+216	RND efflux MFP	Q171H	888891	G	T	0.5	0.071	112.0	0.0	0.0	0.0332	102.0	0.0	0.0	0.0363	1.0	no	non confermato
+216	opmD	P470L	2511381	C	T	0.375	0.75	149.0	0.0	0.0	0.0251	146.0	0.0	0.0	0.0256	1.0	no	non confermato
+216	ompA	L298P	4295164	A	G	0.121	0.389	179.0	0.0	0.0	0.021	150.0	0.0067	0.0012	0.0368	0.456	no	non confermato
+216	ladS	L650P	2169486	A	G	0.211	0.481	168.0	0.0	0.0	0.0224	127.0	0.0	0.0	0.0294	1.0	no	non confermato
+216	gacS	Q840R	5171405	T	C	0.409	0.055	117.0	0.0	0.0	0.0318	118.0	0.0	0.0	0.0315	1.0	no	non confermato
+226	wecA	L92R	78733	A	C	0.016	1.0	189.0	0.0	0.0	0.0199	172.0	0.9942	0.9678	0.999	1.44e-105	si	confermato
+236	ampR	H135D	75233	G	C	0.0	0.986	147.0	0.0	0.0	0.0255	156.0	1.0	0.976	1.0	1.53e-90	si	confermato
+240	ampD	H93R	3995216	A	G	0.02	0.993	243.0	0.0	0.0	0.0156	208.0	0.9952	0.9733	0.9992	4.3400000000000006e-132	si	confermato
+246	dacB (PBP4)	N312K	5789063	C	A	0.601	0.0	168.0	0.7083	0.6356	0.7718	146.0	0.0	0.0	0.0256	5.34e-47	si	confermato
+254	blaCTX-M-178	S239G	2077033	A	G	0.0	1.0											non valutabile (sito assente)
+275	rpoB	P952Q	142228	G	T	0.0	0.997	163.0	0.0	0.0	0.023	103.0	1.0	0.964	1.0	1.55e-76	si	confermato
+279	mexR	*127E	2965488	T	G	0.0	1.0	257.0	0.0	0.0	0.0147	212.0	1.0	0.9822	1.0	1.54e-139	si	confermato

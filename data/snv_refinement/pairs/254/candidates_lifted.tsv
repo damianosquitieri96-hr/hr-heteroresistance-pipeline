@@ -1,0 +1,2 @@
+pair	orig_contig	orig_pos	ref	alt	gene	aa	prev_afR	prev_afS	new_contig	new_pos	polished_ref_base	lift_status
+254	contig_1	2077033	A	G	blaCTX-M-178	S239G	0.0	1.0	NA	NA	NA	unlifted

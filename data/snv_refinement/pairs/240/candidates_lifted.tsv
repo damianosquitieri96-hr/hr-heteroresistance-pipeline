@@ -1,0 +1,2 @@
+pair	orig_contig	orig_pos	ref	alt	gene	aa	prev_afR	prev_afS	new_contig	new_pos	polished_ref_base	lift_status
+240	contig_1	3995216	A	G	ampD	H93R	0.02	0.993	contig_1	3995615	A	left_flank

@@ -1,0 +1,2 @@
+pair	orig_contig	orig_pos	ref	alt	gene	aa	prev_afR	prev_afS	new_contig	new_pos	polished_ref_base	lift_status	dp_R	alt_R	af_R	lo_R	hi_R	altF_R	altR_R	dp_S	alt_S	af_S	lo_S	hi_S	altF_S	altR_S	fisher_p	dAF_new	freebayes	verdict
+236	contig_3	75233	G	C	ampR	H135D	0.0	0.986	contig_3	75242	G	left_flank	147	0	0.0000	0.0000	0.0255	0	0	156	156	1.0000	0.9760	1.0000	75	81	1.53e-90	-1.0000	si	confermato

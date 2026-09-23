@@ -23,4 +23,5 @@ Licensed CC-BY-4.0 (see `../LICENSE`).
 | `HR_intraclone_matrices_x1e6.csv` | intra-clone submatrices (values x1e6) |
 | `vep_missense.csv` | missense variants: ESM-2 LLR, RSA, pLDDT, catalytic-site distance |
 | `spec163_SNP_method_comparison.csv` | pair 163: superseded windowed method vs joint calling |
+| `snv_refinement/` | stage 09: short-read allele fractions of the SNV candidates, 10 pairs (own README) |
 | `tablesSNPeCNV_completed.xlsx` | workbook: snp, cnv, PAP_metrics, amp_units, methods, vep_missense |

@@ -1,0 +1,8 @@
+pair	orig_contig	orig_pos	ref	alt	gene	aa	prev_afR	prev_afS	new_contig	new_pos	polished_ref_base	lift_status	dp_R	alt_R	af_R	lo_R	hi_R	altF_R	altR_R	dp_S	alt_S	af_S	lo_S	hi_S	altF_S	altR_S	fisher_p	dAF_new	freebayes	verdict
+216	contig_3	1109500	G	A	dacB (PBP4)	M1I	1.0	0.0	contig_3	1109575	G	left_flank	125	124	0.9920	0.9561	0.9986	45	79	153	0	0.0000	0.0000	0.0245	0	0	2.71e-80	0.9920	si	confermato
+216	contig_3	888890	A	G	RND efflux MFP	Q171R	0.529	0.077	contig_3	888945	A	left_flank	111	0	0.0000	0.0000	0.0335	0	0	101	0	0.0000	0.0000	0.0366	0	0	1	0.0000	no	non confermato
+216	contig_3	888891	G	T	RND efflux MFP	Q171H	0.5	0.071	contig_3	888946	G	left_flank	112	0	0.0000	0.0000	0.0332	0	0	102	0	0.0000	0.0000	0.0363	0	0	1	0.0000	no	non confermato
+216	contig_3	2511381	C	T	opmD	P470L	0.375	0.75	contig_3	2511547	T	left_flank;REF_MISMATCH	149	0	0.0000	0.0000	0.0251	0	0	146	0	0.0000	0.0000	0.0256	0	0	1	0.0000	no	non confermato
+216	contig_3	4295164	A	G	ompA	L298P	0.121	0.389	contig_3	4295463	A	left_flank	179	0	0.0000	0.0000	0.0210	0	0	150	1	0.0067	0.0012	0.0368	0	1	0.456	-0.0067	no	non confermato
+216	contig_3	2169486	A	G	ladS	L650P	0.211	0.481	contig_3	2169624	A	left_flank	168	0	0.0000	0.0000	0.0224	0	0	127	0	0.0000	0.0000	0.0294	0	0	1	0.0000	no	non confermato
+216	contig_3	5171405	T	C	gacS	Q840R	0.409	0.055	contig_3	5171768	T	left_flank	117	0	0.0000	0.0000	0.0318	0	0	118	0	0.0000	0.0000	0.0315	0	0	1	0.0000	no	non confermato

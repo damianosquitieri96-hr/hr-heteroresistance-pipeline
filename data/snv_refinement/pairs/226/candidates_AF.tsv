@@ -1,0 +1,2 @@
+pair	orig_contig	orig_pos	ref	alt	gene	aa	prev_afR	prev_afS	new_contig	new_pos	polished_ref_base	lift_status	dp_R	alt_R	af_R	lo_R	hi_R	altF_R	altR_R	dp_S	alt_S	af_S	lo_S	hi_S	altF_S	altR_S	fisher_p	dAF_new	freebayes	verdict
+226	contig_1	78733	A	C	wecA	L92R	0.016	1.0	contig_1	78739	A	left_flank	189	0	0.0000	0.0000	0.0199	0	0	172	171	0.9942	0.9678	0.9990	99	72	1.44e-105	-0.9942	si	confermato

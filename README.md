@@ -33,7 +33,8 @@ No inter-patient comparison is made anywhere in the pipeline.
 |---|---|
 | `docs/methods.md` | full Methods text; the source the manuscript is cut from |
 | `docs/PROVENANCE_GAPS.md` | parameters that could not be recovered, and what that limits |
-| `pipeline/00_assembly.md` .. `08_figures/` | one file per stage; `.sh`/`.py` if scripted, `.md` if run by hand |
+| `pipeline/00_assembly.md` .. `09_snv_refinement/` | one file per stage; `.sh`/`.py` if scripted, `.md` if run by hand |
+| `pipeline/09_snv_refinement/` | short-read refinement of the SNV candidates, 10 pairs, allele fraction per arm |
 | `data/` | derived tables only — one row per pair or per variant, no patient-level data |
 | `results/` | final figures |
 | `submission/ena/` | pre-filled ENA/Webin metadata for the 101 read libraries, not yet submitted |
@@ -55,6 +56,16 @@ Joint two-sample variant calling — and therefore the intra-pair chromosomal di
 is available for 17 of 33 pairs. For the remaining 16 pairs
 (70, 72, 76, 87, 103, 137, 155, 173, 189, 197, 200, 211, 219, 220, 231, 257) no joint VCF exists and **no intra-pair distance is reported**.
 Per-pair status: `data/pairs_vcf_availability.csv`.
+
+## SNV refinement (stage 09)
+
+In the 10 pairs whose candidate mechanism is an SNV (80, 202, 216, 226, 236, 240, 246,
+254, 275, 279) the long-read candidates were re-tested with short reads on a
+Polypolish-polished reference, reporting allele fraction per arm rather than genotype.
+All 10 primary candidates are confirmed (9 fixed, 246 *dacB* N312K subclonal at 0.71);
+all 10 long-read-only subclonal calls are artefacts. Method, parameters and versions:
+[`pipeline/09_snv_refinement/README.md`](pipeline/09_snv_refinement/README.md);
+tables: `data/snv_refinement/`.
 
 ## Citation
 

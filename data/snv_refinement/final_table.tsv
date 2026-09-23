@@ -1,0 +1,38 @@
+pair	origine	gene	prodotto	variante	effetto	af_R	af_S	stato	esito	pathway	note
+80	candidato long-read	ampR		D135A		0.996 (0.976-0.999)	0.000 (0.000-0.017)	fissata in R	confermato	circuito AmpC / riciclo PG	
+80	candidato long-read	wzxC		L397L		0.006 (0.001-0.031)	0.000 (0.000-0.019)	assente	non confermato (artefatto ONT)		
+80	candidato long-read	D-Ala carboxypeptidase		Q181R		0.000 (0.000-0.020)	0.000 (0.000-0.021)	assente	non confermato (artefatto ONT)		
+80	candidato long-read	histidine kinase		L28P		0.000 (0.000-0.018)	0.000 (0.000-0.017)	assente	non confermato (artefatto ONT)		
+80	candidato long-read	PBP1a		Q435Q		0.000 (0.000-0.020)	0.000 (0.000-0.021)	assente	non confermato (artefatto ONT)		
+202	candidato long-read	ampD		A97V		0.996 (0.977-0.999)	0.000 (0.000-0.019)	fissata in R	confermato	circuito AmpC / riciclo PG	
+202	nuovo (scan short-read)	HR202S_01169	C4-dicarboxylate anaerobic carrier	L466M	missense	0.079 (0.051-0.121)	0.000 (0.000-0.018)	subclonale in R	debole		AF 8%, solo suggestivo
+202	nuovo (scan short-read)	HR202S_02737	N-ethylmaleimide reductase	A257A	synonymous	1.000 (0.976-1.000)	0.000 (0.000-0.029)	fissata in R	confermato (short reads)		
+216	candidato long-read	dacB (PBP4)		M1I		0.992 (0.956-0.999)	0.000 (0.000-0.025)	fissata in R	confermato	circuito AmpC / riciclo PG	
+216	candidato long-read	RND efflux MFP		Q171R		0.000 (0.000-0.034)	0.000 (0.000-0.037)	assente	non confermato (artefatto ONT)		
+216	candidato long-read	RND efflux MFP		Q171H		0.000 (0.000-0.033)	0.000 (0.000-0.036)	assente	non confermato (artefatto ONT)		
+216	candidato long-read	opmD		P470L		0.000 (0.000-0.025)	0.000 (0.000-0.026)	assente	non confermato (artefatto ONT)		
+216	candidato long-read	ompA		L298P		0.000 (0.000-0.021)	0.007 (0.001-0.037)	assente	non confermato (artefatto ONT)		
+216	candidato long-read	ladS		L650P		0.000 (0.000-0.022)	0.000 (0.000-0.029)	assente	non confermato (artefatto ONT)		
+216	candidato long-read	gacS		Q840R		0.000 (0.000-0.032)	0.000 (0.000-0.032)	assente	non confermato (artefatto ONT)		
+216	nuovo (scan short-read)	mpl	UDP-N-acetylmuramate--L-alanyl-gamma-D-glutamyl-meso-2,6-diaminoheptandioate ligase	-1 bp	frameshift	0.390 (0.312-0.474)	0.008 (0.001-0.043)	subclonale in R	confermato (short reads)	circuito AmpC / riciclo PG	in omopolimero G, ma sostenuta dalla fasatura con G29S
+216	nuovo (scan short-read)	mpl	UDP-N-acetylmuramate--L-alanyl-gamma-D-glutamyl-meso-2,6-diaminoheptandioate ligase	G29S	missense	0.496 (0.414-0.579)	0.000 (0.000-0.027)	subclonale in R	confermato (short reads)	circuito AmpC / riciclo PG	esclusiva con il frameshift mpl (short reads 63/62/0/0): due sottopopolazioni
+216	nuovo (scan short-read)	HR216S_03989	Polyribonucleotide nucleotidyltransferase	V470V	synonymous	0.000 (0.000-0.023)	0.292 (0.235-0.355)	subclonale in S	confermato (short reads)		
+216	nuovo (scan short-read)	flgI	flagellar P-ring protein precursor FlgI	Q71P	missense	1.000 (0.967-1.000)	0.008 (0.001-0.044)	fissata in R	confermato (short reads)		
+226	candidato long-read	wecA		L92R		0.000 (0.000-0.020)	0.994 (0.968-0.999)	fissata in S	confermato	involucro / LPS-ECA	
+226	nuovo (scan short-read)	envZ	Sensor histidine kinase EnvZ	K136N	missense	0.161 (0.118-0.217)	0.000 (0.000-0.021)	subclonale in R	confermato (short reads)	regolazione porine (EnvZ/OmpR)	
+226	nuovo (scan short-read)	ypdI	Uncharacterized lipoprotein YpdI	M6V	missense	0.005 (0.001-0.027)	0.893 (0.847-0.926)	fissata in S	confermato (short reads)		
+236	candidato long-read	ampR		H135D		0.000 (0.000-0.025)	1.000 (0.976-1.000)	fissata in S	confermato	circuito AmpC / riciclo PG	
+240	candidato long-read	ampD		H93R		0.000 (0.000-0.016)	0.995 (0.973-0.999)	fissata in S	confermato	circuito AmpC / riciclo PG	
+240	nuovo (scan short-read)	intergenico		contig_1:2388388	intergenic	0.535 (0.460-0.608)	0.000 (0.000-0.018)	subclonale in R	confermato (short reads)		1101 bp downstream of HR240R_02317 ebgR (+) | promoter 66 bp upstream of HR240R_02318 Beta-galactosidase (+)
+240	nuovo (scan short-read)	HR240R_03226	Pantothenate kinase	V221A	missense	0.000 (0.000-0.018)	0.084 (0.051-0.134)	subclonale in S	debole		AF 8%, solo suggestivo
+240	nuovo (scan short-read)	mpl	UDP-N-acetylmuramate--L-alanyl-gamma-D-glutamyl-meso-2,6-diaminoheptandioate ligase	H190Y	missense	0.509 (0.443-0.575)	0.005 (0.001-0.027)	subclonale in R	confermato (short reads)	circuito AmpC / riciclo PG	
+240	nuovo (scan short-read)	HR240R_04489	Regulatory protein mnt	V39V	synonymous	0.000 (0.000-0.018)	0.268 (0.211-0.333)	subclonale in S	confermato (short reads)		
+246	candidato long-read	dacB (PBP4)		N312K		0.708 (0.636-0.772)	0.000 (0.000-0.026)	subclonale in R	confermato	circuito AmpC / riciclo PG	long reads: esclusiva con P175L (1/418 reads con entrambe); ~62% di R
+246	nuovo (scan short-read)	dacB (PBP4)	D-alanyl-D-alanine carboxypeptidase/D-alanyl-D-alanine-endopeptidase	P175L	missense	0.157 (0.108-0.223)	0.006 (0.001-0.034)	subclonale in R	confermato (short reads)	circuito AmpC / riciclo PG	seconda mutazione dacB, in sottopopolazione distinta da N312K (~19% di R)
+254	candidato long-read	blaCTX-M-178		S239G		0.012 (0.005-0.027)	0.991 (0.977-0.996)	fissata in S	confermato (long reads)	beta-lattamasi	gene in 3 copie; R = 2x CTX-M-15 + 1x CTX-M-178 (copia cromosomica 2.08 Mb, Ser239), S = 3x CTX-M-15; AF da long reads MAPQ>=20 sulla copia 1
+254	nuovo (scan short-read)	HR254R_02108	Glucans biosynthesis glucosyltransferase H	M509T	missense	0.000 (0.000-0.023)	0.458 (0.379-0.540)	subclonale in S	confermato (short reads)		
+254	nuovo (scan short-read)	intergenico		contig_1:2248203	intergenic	0.000 (0.000-0.030)	1.000 (0.975-1.000)	fissata in S	confermato (short reads)		promoter 218 bp upstream of HR254R_02164 TonB-dependent receptor (-) | promoter 24 bp upstream of HR254R_02165 tnp (+)
+254	nuovo (scan short-read)	HR254R_02911	hypothetical protein	+1 bp	frameshift	0.677 (0.554-0.780)	0.087 (0.024-0.268)	subclonale in R	probabile artefatto		omopolimero G, S con 23 reads
+275	candidato long-read	rpoB		P952Q		0.000 (0.000-0.023)	1.000 (0.964-1.000)	fissata in S	confermato	RNA polimerasi	
+275	nuovo (scan short-read)	intergenico		contig_2:1664570	intergenic	0.028 (0.011-0.069)	0.368 (0.255-0.498)	subclonale in S	probabile artefatto		S 57 reads, forte bias di strand (19/2)
+279	candidato long-read	mexR		*127E		0.000 (0.000-0.015)	1.000 (0.982-1.000)	fissata in S	confermato	efflusso (MexAB-OprM)	

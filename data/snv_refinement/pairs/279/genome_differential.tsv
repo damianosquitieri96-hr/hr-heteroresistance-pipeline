@@ -1,0 +1,2 @@
+contig	pos	ref	alt	dp_R	alt_R	af_R	lo_R	hi_R	altF_R	altR_R	dp_S	alt_S	af_S	lo_S	hi_S	altF_S	altR_S	fisher_p	dAF	class
+contig_1	2965739	T	G	256	0	0.0000	0.0000	0.0148	0	0	203	203	1.0000	0.9814	1.0000	115	88	3.85e-136	-1.0000	fixed
