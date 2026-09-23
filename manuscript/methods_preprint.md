@@ -72,8 +72,8 @@ plus dense tracts, each tract counted once, and is 0–4 per pair (median 1) acr
 pairs, with two pairs additionally carrying a tract. The classification uses the maximum and
 minimum of the two allele fractions and is therefore symmetric in the arms. Permissive
 subclonal counts are threshold-dominated — allele fractions pile up immediately above the
-0.20 cut-off in depth-depleted arms — so only a filtered count (≥ 20 supporting reads,
-between-arm depth ratio ≥ 0.5) is reported. The 16 pairs without a call set receive no
+0.20 cut-off in depth-depleted arms — so only a filtered count (depth ≥ 20 in the variant-carrying
+arm, depth ratio of that arm to the other ≥ 0.5) is reported. The 16 pairs without a call set receive no
 distance, and no value from the superseded method is substituted for them.
 
 ## Clonality, predicted variant effect and PAP

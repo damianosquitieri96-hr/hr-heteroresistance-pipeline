@@ -33,12 +33,24 @@ Difference classes, from per-sample allelic depths (FORMAT/AD), both arms >= MIN
    fixed      one arm >= 0.90 alt fraction, the other <= 0.10
    subclonal  one arm >= 0.20, the other <= 0.05, and the two differ by >= 0.20
    shared     neither of the above -> not a difference between the arms
+
+Balance filter (subclonal_filtered, the subclonal column to quote): the arm carrying the
+higher alt fraction (dp_var) has depth >= BAL_MINDP at the site, and its depth is
+>= BAL_RATIO times the other arm's (bal = dp_var / dp_oth). Permissive subclonal calls
+pile up just above SUB_HI on depth-depleted arms, the signature of mapping noise.
+
+Usage: HR_EXPORTS=/path/to/exports python recount.py
+HR_EXPORTS is the per-pair exports directory (<pair>/<pair>.RS.vcf.gz and
+<pair>/<pair><ref>.contigs.tsv); outputs are written to ./snpdist/.
 """
-import gzip, glob, os
+import gzip, glob, os, sys
 import pandas as pd
 
-E = "/Users/damsq/Downloads/hr_exports"
+E = os.environ.get("HR_EXPORTS")
+if not E or not os.path.isdir(E):
+    sys.exit("[recount] set HR_EXPORTS to the per-pair exports directory")
 MINDP, HI, LO, SUB_HI, SUB_LO, DSUB = 10, 0.90, 0.10, 0.20, 0.05, 0.20
+BAL_MINDP, BAL_RATIO = 20, 0.5
 TRACT_N, TRACT_BP, CHR_MIN = 5, 500, 1_000_000
 
 
@@ -59,6 +71,15 @@ def classify(afr, afs):
     if hi >= SUB_HI and lo <= SUB_LO and (hi - lo) >= DSUB:
         return "subclonal"
     return "shared"
+
+
+def balance(D):
+    """add the variant-arm depth balance columns and the balance-filter flag."""
+    r_var = D.af_R >= D.af_S
+    B = D.assign(af_max=D.af_R.where(r_var, D.af_S), af_min=D.af_S.where(r_var, D.af_R),
+                 dp_var=D.dp_R.where(r_var, D.dp_S), dp_oth=D.dp_S.where(r_var, D.dp_R))
+    B = B.assign(bal=B.dp_var / B.dp_oth)
+    return B.assign(passes_balance=((B.dp_var >= BAL_MINDP) & (B.bal >= BAL_RATIO)).astype(int))
 
 
 def recount(pair):
@@ -119,12 +140,15 @@ def recount(pair):
         D = pd.DataFrame(columns=["pair", "contig", "pos", "ref", "alt", "af_R", "af_S",
                                   "dp_R", "dp_S", "cls", "grp", "in_tract"])
 
+    D = balance(D.drop(columns="grp"))
     disp = D[~D.in_tract.astype(bool)]
+    sub = disp[disp.cls == "subclonal"]
     return D, dict(pair=pair, chrom=chrom.contig, chrom_bp=int(chrom.length),
                    extra_large_contigs=";".join(extra.contig) or "-",
                    fixed_dispersed=int((disp.cls == "fixed").sum()),
-                   subclonal_dispersed=int((disp.cls == "subclonal").sum()),
                    dense_tracts=tracts, sites_in_tracts=int(D.in_tract.astype(bool).sum()),
+                   subclonal_filtered=int(sub.passes_balance.sum()),
+                   subclonal_dispersed=len(sub),
                    indel_differences=stats["indel_diff"], shared_sites=stats["shared"],
                    low_depth_sites=stats["low_depth"], off_chromosome=stats["off_chrom"])
 

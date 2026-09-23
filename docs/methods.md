@@ -151,8 +151,9 @@ reported in the variant table, at the expected coordinates — e.g. pair 40
 The permissive `subclonal_dispersed` column is threshold-dominated: for the pairs with
 large values the allele fractions pile up just above the 0.20 cut and the variant-carrying
 arm is depth-depleted relative to the other, the signature of mapping noise.
-`subclonal_filtered` therefore adds ≥ 20 reads supporting the site and a depth ratio
-≥ 0.5 between the two arms; only that column should be quoted.
+`subclonal_filtered` therefore adds a depth of ≥ 20 reads at the site in the arm carrying
+the higher alt fraction, and a depth ratio of that arm to the other ≥ 0.5
+(`passes_balance` in the differential-sites table); only that column should be quoted.
 
 ## Pairs that cannot be recomputed
 
